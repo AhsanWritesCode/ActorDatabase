@@ -19,19 +19,19 @@
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem mnemonicParsing="false" text="Load" />
-                  <MenuItem mnemonicParsing="false" text="Save" />
-                  <MenuItem mnemonicParsing="false" text="Close" />
+              <MenuItem mnemonicParsing="false" onAction="#load" text="Load" />
+                  <MenuItem mnemonicParsing="false" onAction="#save" text="Save" />
+                  <MenuItem mnemonicParsing="false" onAction="#exit" text="Close" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">
             <items>
-              <MenuItem mnemonicParsing="false" text="Add Actor" />
+              <MenuItem mnemonicParsing="false" onAction="#storeNewActor" text="Add Actor" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
             <items>
-              <MenuItem mnemonicParsing="false" text="About" />
+              <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
             </items>
           </Menu>
         </menus>
@@ -73,7 +73,7 @@
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="346.0" prefWidth="192.0">
                            <children>
-                              <Label />
+                              <Label fx:id="actors_label" />
                            </children>
                         </AnchorPane>
                     </content>
@@ -86,7 +86,7 @@
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="374.0" prefWidth="191.0">
                            <children>
-                              <Label />
+                              <Label fx:id="costars_label" />
                            </children>
                         </AnchorPane>
                     </content>
