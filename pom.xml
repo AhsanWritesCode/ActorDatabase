@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>ca.ucalgary.ahsantariq.demogui/ca.ucalgary.ahsantariq.demogui.HelloApplication
+                            <mainClass>ca.ucalgary.ahsantariq.demogui/ca.ucalgary.ahsantariq.demogui.MainGUI
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
