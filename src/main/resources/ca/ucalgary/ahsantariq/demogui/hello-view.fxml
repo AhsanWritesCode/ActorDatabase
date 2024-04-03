@@ -65,13 +65,13 @@
       <Label BorderPane.alignment="CENTER" />
    </bottom>
    <center>
-      <SplitPane dividerPositions="0.45226130653266333" prefHeight="358.0" prefWidth="322.0" BorderPane.alignment="CENTER">
+      <SplitPane dividerPositions="0.5156695156695157" prefHeight="358.0" prefWidth="322.0" BorderPane.alignment="CENTER">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="290.0" prefWidth="106.0">
                <children>
-                  <ScrollPane layoutX="-8.0" layoutY="-7.0" prefHeight="361.0" prefWidth="185.0">
+                  <ScrollPane layoutX="-8.0" layoutY="-1.0" prefHeight="355.0" prefWidth="185.0">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="362.0" prefWidth="184.0">
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="346.0" prefWidth="192.0">
                            <children>
                               <Label />
                            </children>
@@ -80,11 +80,11 @@
                   </ScrollPane>
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="511.0" prefWidth="336.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="330.0" prefWidth="167.0">
                <children>
-                  <ScrollPane layoutX="6.0" layoutY="6.0" prefHeight="350.0" prefWidth="201.0">
+                  <ScrollPane layoutX="-4.0" prefHeight="355.0" prefWidth="173.0">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="195.0">
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="374.0" prefWidth="191.0">
                            <children>
                               <Label />
                            </children>
