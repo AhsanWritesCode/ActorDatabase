@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="refined boundaries of scroll pane" />
+    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="set pref width of right side panel + elements to 116">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/ahsantariq/demogui/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/ahsantariq/demogui/hello-view.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +100,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712174101581</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="set pref width of left side panel + elements to 130">
+      <option name="closed" value="true" />
+      <created>1712174272046</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712174272046</updated>
+    </task>
+    <task id="LOCAL-00007" summary="set pref width of right side panel + elements to 116">
+      <option name="closed" value="true" />
+      <created>1712174350026</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712174350026</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -105,6 +124,8 @@
     <MESSAGE value="Started UI" />
     <MESSAGE value="More progress on UI" />
     <MESSAGE value="refined boundaries of scroll pane" />
-    <option name="LAST_COMMIT_MESSAGE" value="refined boundaries of scroll pane" />
+    <MESSAGE value="set pref width of left side panel + elements to 130" />
+    <MESSAGE value="set pref width of right side panel + elements to 116" />
+    <option name="LAST_COMMIT_MESSAGE" value="set pref width of right side panel + elements to 116" />
   </component>
 </project>

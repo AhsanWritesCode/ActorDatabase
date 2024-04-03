@@ -40,14 +40,14 @@
    <left>
       <VBox prefHeight="358.0" prefWidth="130.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField prefWidth="130.0" />
-            <TextField prefWidth="130.0" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Create Co-Star Pair" />
-            <TextField prefWidth="130.0" />
-            <TextField prefWidth="130.0" />
-            <Button mnemonicParsing="false" prefWidth="130.0" text="Separate Co-Star Pair" />
-            <TextField prefWidth="130.0" />
-            <Button mnemonicParsing="false" prefWidth="130.0" text="Retire Actor" />
+            <TextField fx:id="costar_id1" prefWidth="130.0" />
+            <TextField fx:id="costar_id2" prefWidth="130.0" />
+            <Button mnemonicParsing="false" onAction="#storeNewCoStarPair" prefHeight="25.0" prefWidth="130.0" text="Create Co-Star Pair" />
+            <TextField fx:id="sep_id1" prefWidth="130.0" />
+            <TextField fx:id="sep_id2" prefWidth="130.0" />
+            <Button mnemonicParsing="false" onAction="#splitPair" prefWidth="130.0" text="Split Co-Star Pair" />
+            <TextField fx:id="retire_id1" prefWidth="130.0" />
+            <Button mnemonicParsing="false" onAction="#retire" prefWidth="130.0" text="Retire Actor" />
          </children>
       </VBox>
    </left>
@@ -55,9 +55,9 @@
       <VBox prefHeight="358.0" prefWidth="116.0" BorderPane.alignment="CENTER">
          <children>
             <TextField prefWidth="116.0" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="Actor Info" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="Data Stats" />
-            <Button mnemonicParsing="false" prefWidth="116.0" text="Unassigned Actors" />
+            <Button fx:id="info_id1" mnemonicParsing="false" onAction="#menuPrintActorInfo" prefHeight="25.0" prefWidth="116.0" text="Actor Info" />
+            <Button mnemonicParsing="false" onAction="#menuActorStatistics" prefHeight="25.0" prefWidth="116.0" text="Actor Stats" />
+            <Button mnemonicParsing="false" onAction="#getLoneActorsCount" prefWidth="116.0" text="Lone Actors" />
          </children>
       </VBox>
    </right>
