@@ -38,16 +38,16 @@
       </MenuBar>
    </top>
    <left>
-      <VBox prefHeight="358.0" prefWidth="131.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="358.0" prefWidth="130.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField />
-            <TextField />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Create Co-Star Pair" />
-            <TextField />
-            <TextField />
-            <Button mnemonicParsing="false" text="Separate Co-Star Pair" />
-            <TextField />
-            <Button mnemonicParsing="false" text="Retire Actor" />
+            <TextField prefWidth="130.0" />
+            <TextField prefWidth="130.0" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Create Co-Star Pair" />
+            <TextField prefWidth="130.0" />
+            <TextField prefWidth="130.0" />
+            <Button mnemonicParsing="false" prefWidth="130.0" text="Separate Co-Star Pair" />
+            <TextField prefWidth="130.0" />
+            <Button mnemonicParsing="false" prefWidth="130.0" text="Retire Actor" />
          </children>
       </VBox>
    </left>
