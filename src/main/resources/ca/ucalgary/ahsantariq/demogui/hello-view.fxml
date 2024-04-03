@@ -54,10 +54,10 @@
    <right>
       <VBox prefHeight="358.0" prefWidth="116.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" text="Actor Info" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" text="Data Stats" />
-            <Button mnemonicParsing="false" text="Unassigned Actors" />
+            <TextField prefWidth="116.0" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="Actor Info" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="Data Stats" />
+            <Button mnemonicParsing="false" prefWidth="116.0" text="Unassigned Actors" />
          </children>
       </VBox>
    </right>
