@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="fixed equals method for Pair.java">
+    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="Changed wording for retirement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/ahsantariq/demogui/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/ahsantariq/demogui/main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -441,17 +442,29 @@
       <option name="project" value="LOCAL" />
       <updated>1712785999830</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Added retiring to actors">
+      <option name="closed" value="true" />
+      <created>1712786997602</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1712786997602</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Changed wording for retirement">
+      <option name="closed" value="true" />
+      <created>1712787078129</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1712787078129</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added splitCoStarPair button" />
-    <MESSAGE value="Added on action method storeNewCoStarPair for create co star pair button" />
-    <MESSAGE value="Added on action method splitPair for create split co star pair button and added MainController as controller" />
-    <MESSAGE value="created on action method for storeNewActor on MainController.java" />
     <MESSAGE value="on action method for load created on MainController.java" />
     <MESSAGE value="on action method for save created on MainController.java" />
     <MESSAGE value="created on action method for exit on MainController.java" />
@@ -475,18 +488,9 @@
     <MESSAGE value="progressed on maincontroller. save" />
     <MESSAGE value="progressed on maincontroller. splitPair" />
     <MESSAGE value="fixed equals method for Pair.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed equals method for Pair.java" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java</url>
-          <line>179</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added retiring to actors" />
+    <MESSAGE value="Changed wording for retirement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed wording for retirement" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

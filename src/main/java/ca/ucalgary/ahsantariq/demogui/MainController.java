@@ -55,6 +55,9 @@ public class MainController {
     private Label actors_label;
 
     @FXML
+    private Label unpaired_label;
+
+    @FXML
     private TextField costar_id1;
 
     @FXML
@@ -101,10 +104,6 @@ public class MainController {
         Platform.exit();
     }
 
-    @FXML
-    void getLoneActorsCount(ActionEvent event) {
-
-    }
 
     @FXML
     void load(ActionEvent event) {
@@ -115,16 +114,25 @@ public class MainController {
         File file = fc.showOpenDialog(new Stage());
         load(file);
         viewActors();
+        viewCoStarPairs();
+        viewUnpaired();
     }
 
     private void viewActors() {
         // Retrieve and print information about all actors from the data
         ArrayList<Actor> actors = data.getAllActors();
         actors.sort(new ActorNameImdbLinkComparator());
-        viewActors(actors);
-        viewCoStarPairs();
+        String s = viewActors(actors);
+        actors_label.setText(s);
     }
 
+    private void viewUnpaired() {
+        // Retrieve and print information about all actors from the data
+        ArrayList<Actor> actors = data.getActorsNotInPair();
+        actors.sort(new ActorNameImdbLinkComparator());
+        String s = viewActors(actors);
+        unpaired_label.setText(s);
+    }
     private void viewCoStarPairs() {
         StringBuilder sb = new StringBuilder();
         // Display header for co-star pair information
@@ -143,7 +151,7 @@ public class MainController {
         costars_label.setText(sb.toString());
     }
 
-    private void viewActors(ArrayList<Actor> actors) {
+    private String viewActors(ArrayList<Actor> actors) {
         StringBuilder sb = new StringBuilder();
         // Display header for actor information
         sb.append(ACTOR_HEADER);
@@ -159,7 +167,7 @@ public class MainController {
             // Display actor information using formatted string
             sb.append(String.format(ACTOR_FORMAT, actor.getName(), actor.getAge(), actor.getHeight(), actor.getCountry(), actor.getNumberOfAwards(), actor.getImdbLink(), actor.isRetired()));
         }
-        actors_label.setText(sb.toString());
+        return sb.toString();
     }
 
     private void load(File file){
@@ -216,7 +224,9 @@ public class MainController {
             status_label.setText(String.format("Actor has been retired"));
             data.retire(id1);
         }
+        viewActors();
         viewCoStarPairs();
+        viewUnpaired();
     }
 
     @FXML
@@ -243,7 +253,9 @@ public class MainController {
             status_label.setText(String.format("Actor 1 and 2 are separated!"));
             data.splitPair(id1,id2);
         }
+        viewActors();
         viewCoStarPairs();
+        viewUnpaired();
     }
 
     @FXML
@@ -271,7 +283,9 @@ public class MainController {
             status_label.setText(String.format("Actor 1 and 2 are now in a co-star pair!"));
             data.storeNewCoStarPair(id1,id2);
         }
+        viewActors();
         viewCoStarPairs();
+        viewUnpaired();
     }
 
 }
