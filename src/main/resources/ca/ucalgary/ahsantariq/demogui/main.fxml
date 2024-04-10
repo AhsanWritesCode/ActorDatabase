@@ -12,8 +12,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.ucalgary.ahsantariq.demogui.MainController">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
@@ -42,10 +41,10 @@
          <children>
             <TextField fx:id="costar_id1" prefWidth="130.0" />
             <TextField fx:id="costar_id2" prefWidth="130.0" />
-            <Button mnemonicParsing="false" onAction="#storeNewCoStarPair" prefHeight="25.0" prefWidth="130.0" text="Create Co-Star Pair" />
+            <Button fx:id="createCoStarButton" mnemonicParsing="false" onAction="#storeNewCoStarPair" prefHeight="25.0" prefWidth="130.0" text="Create Co-Star Pair" />
             <TextField fx:id="sep_id1" prefWidth="130.0" />
             <TextField fx:id="sep_id2" prefWidth="130.0" />
-            <Button mnemonicParsing="false" onAction="#splitPair" prefWidth="130.0" text="Split Co-Star Pair" />
+            <Button fx:id="splitCoStarPair" mnemonicParsing="false" onAction="#splitPair" prefWidth="130.0" text="Split Co-Star Pair" />
             <TextField fx:id="retire_id1" prefWidth="130.0" />
             <Button mnemonicParsing="false" onAction="#retire" prefWidth="130.0" text="Retire Actor" />
          </children>

@@ -1,5 +1,6 @@
 package ca.ucalgary.ahsantariq.demogui;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -14,12 +15,18 @@ public class MainController {
     protected void onHelloButtonClick() {
         welcomeText.setText("Welcome to JavaFX Application!");
     }
+
     @FXML
-    private void storeNewCoStarPair(){
+    private void storeNewCoStarPair() {
 
     }
-    @FXML
-    private void splitPair(){
 
+    @FXML
+    private void splitPair() {
+
+    }
+
+    @FXML
+    public void storeNewActor(ActionEvent actionEvent) {
     }
 }
