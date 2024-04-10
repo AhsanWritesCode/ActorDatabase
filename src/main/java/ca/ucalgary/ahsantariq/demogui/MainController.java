@@ -5,6 +5,10 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.paint.Color;
+import javafx.stage.FileChooser;
+
+import java.io.File;
 
 public class MainController {
 
@@ -65,6 +69,7 @@ public class MainController {
     @FXML
     private TextField sep_id2;
 
+    @FXML private Label status_label;
     @FXML
     void about(ActionEvent event) {
 
@@ -82,7 +87,23 @@ public class MainController {
 
     @FXML
     void load(ActionEvent event) {
+        FileChooser fc = new FileChooser();
+        fc.setTitle("Load a file");
 
+
+    }
+
+    private void load(File file){
+        status_label.setTextFill(Color.BLACK);
+        status_label.setText("");
+        if (data == null){
+            status_label.setTextFill(Color.RED);
+            status_label.setText(String.format("Failed to load from file %s%n", file));
+        } else{
+            status_label.setTextFill(Color.GREEN);
+            status_label.setText(String.format("Loaded data from file %s%n", file));
+            MainController.data = data;
+        }
     }
 
     @FXML
