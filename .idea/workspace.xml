@@ -16,13 +16,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitLabMergeRequestFiltersHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPENED&quot;,
+    &quot;assignee&quot;: {
+      &quot;type&quot;: &quot;org.jetbrains.plugins.gitlab.mergerequest.ui.filters.GitLabMergeRequestsFiltersValue.MergeRequestsMemberFilterValue.MergeRequestsAssigneeFilterValue&quot;,
+      &quot;username&quot;: &quot;rahnuha.nurain&quot;,
+      &quot;fullname&quot;: &quot;Rahnuha Nurain&quot;
+    }
+  }
+}</component>
+  <component name="GitLabMergeRequestsSettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;first&quot;: &quot;https://csgit.ucalgary.ca/ahsan.tariq/groupprojectgui.git&quot;,
+    &quot;second&quot;: &quot;4d00a92e-b0ce-43ec-b483-94d7bcf6cf04&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -38,12 +54,20 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.MainGUI.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -54,7 +78,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-2f79fb23" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
       </set>
     </attachedChunks>
   </component>
@@ -66,6 +91,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712092299984</updated>
+      <workItem from="1712563293476" duration="1012000" />
+      <workItem from="1712607333483" duration="2575000" />
+      <workItem from="1712727279599" duration="1566000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -147,32 +175,195 @@
       <option name="project" value="LOCAL" />
       <updated>1712175706757</updated>
     </task>
-    <task id="LOCAL-00011" summary="Renamed files">
+    <task id="LOCAL-00011" summary="Titles added for MainGUI.java">
       <option name="closed" value="true" />
-      <created>1712175817808</created>
+      <created>1712725531025</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1712175817808</updated>
+      <updated>1712725531025</updated>
     </task>
-    <task id="LOCAL-00012" summary="program executes (updated MainController.java">
+    <task id="LOCAL-00012" summary="Adding Button fx:id's to MainController.java">
       <option name="closed" value="true" />
-      <created>1712632936043</created>
+      <created>1712725871700</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1712632936043</updated>
+      <updated>1712725871700</updated>
     </task>
-    <task id="LOCAL-00013" summary="progressed on maincontroller">
+    <task id="LOCAL-00013" summary="Added splitCoStarPair button">
       <option name="closed" value="true" />
-      <created>1712728174194</created>
+      <created>1712725919931</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1712728174194</updated>
+      <updated>1712725919931</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added on action method storeNewCoStarPair for create co star pair button">
+      <option name="closed" value="true" />
+      <created>1712726106142</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1712726106142</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added on action method splitPair for create split co star pair button and added MainController as controller">
+      <option name="closed" value="true" />
+      <created>1712726206171</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712726206171</updated>
+    </task>
+    <task id="LOCAL-00016" summary="created on action method for storeNewActor on MainController.java">
+      <option name="closed" value="true" />
+      <created>1712726425220</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1712726425220</updated>
+    </task>
+    <task id="LOCAL-00017" summary="on action method for load created on MainController.java">
+      <option name="closed" value="true" />
+      <created>1712726482954</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1712726482954</updated>
+    </task>
+    <task id="LOCAL-00018" summary="on action method for save created on MainController.java">
+      <option name="closed" value="true" />
+      <created>1712726531732</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1712726531732</updated>
+    </task>
+    <task id="LOCAL-00019" summary="created on action method for exit on MainController.java">
+      <option name="closed" value="true" />
+      <created>1712726567569</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1712726567569</updated>
+    </task>
+    <task id="LOCAL-00020" summary="created on action method for exit on MainController.java">
+      <option name="closed" value="true" />
+      <created>1712726661708</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1712726661708</updated>
+    </task>
+    <task id="LOCAL-00021" summary="MainController.java">
+      <option name="closed" value="true" />
+      <created>1712726685934</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1712726685934</updated>
+    </task>
+    <task id="LOCAL-00022" summary="new on action method for about created on MainController.java">
+      <option name="closed" value="true" />
+      <created>1712726770699</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1712726770699</updated>
+    </task>
+    <task id="LOCAL-00023" summary="retire - on action method created on MainController.java">
+      <option name="closed" value="true" />
+      <created>1712726829708</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1712726829708</updated>
+    </task>
+    <task id="LOCAL-00024" summary="menuPrintActorInfo on action method created">
+      <option name="closed" value="true" />
+      <created>1712726878407</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1712726878407</updated>
+    </task>
+    <task id="LOCAL-00025" summary="on action method for menuActorStatistics created">
+      <option name="closed" value="true" />
+      <created>1712726952105</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1712726952105</updated>
+    </task>
+    <task id="LOCAL-00026" summary="getLoneActorsCount on action method">
+      <option name="closed" value="true" />
+      <created>1712726997792</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1712726997792</updated>
+    </task>
+    <task id="LOCAL-00027" summary=" Menu-&gt; close on action method completed.">
+      <option name="closed" value="true" />
+      <created>1712727215476</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1712727215476</updated>
+    </task>
+    <task id="LOCAL-00028" summary="About method completed">
+      <option name="closed" value="true" />
+      <created>1712727843375</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1712727843375</updated>
+    </task>
+    <task id="LOCAL-00029" summary="working on About method">
+      <option name="closed" value="true" />
+      <created>1712728062569</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1712728062569</updated>
+    </task>
+    <task id="LOCAL-00030" summary="fixing bugs on methods">
+      <option name="closed" value="true" />
+      <created>1712728084671</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1712728084671</updated>
+    </task>
+    <task id="LOCAL-00031" summary="fixed bugs on About method">
+      <option name="closed" value="true" />
+      <created>1712728179105</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1712728179105</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fixed the indentation of alert message to make it look better">
+      <option name="closed" value="true" />
+      <created>1712728348771</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1712728348771</updated>
+    </task>
+    <task id="LOCAL-00033" summary="changed outlook for alert pop-up">
+      <option name="closed" value="true" />
+      <created>1712728662762</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1712728662762</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
@@ -188,5 +379,32 @@
     <MESSAGE value="program executes (updated MainController.java" />
     <MESSAGE value="progressed on maincontroller" />
     <option name="LAST_COMMIT_MESSAGE" value="progressed on maincontroller" />
+    <MESSAGE value="Titles added for MainGUI.java" />
+    <MESSAGE value="Adding Button fx:id's to MainController.java" />
+    <MESSAGE value="Added splitCoStarPair button" />
+    <MESSAGE value="Added on action method storeNewCoStarPair for create co star pair button" />
+    <MESSAGE value="Added on action method splitPair for create split co star pair button and added MainController as controller" />
+    <MESSAGE value="created on action method for storeNewActor on MainController.java" />
+    <MESSAGE value="on action method for load created on MainController.java" />
+    <MESSAGE value="on action method for save created on MainController.java" />
+    <MESSAGE value="created on action method for exit on MainController.java" />
+    <MESSAGE value="MainController.java" />
+    <MESSAGE value="new on action method for about created on MainController.java" />
+    <MESSAGE value="retire - on action method created on MainController.java" />
+    <MESSAGE value="menuPrintActorInfo on action method created" />
+    <MESSAGE value="on action method for menuActorStatistics created" />
+    <MESSAGE value="getLoneActorsCount on action method" />
+    <MESSAGE value=" Menu-&gt; close on action method completed." />
+    <MESSAGE value="About method completed" />
+    <MESSAGE value="working on About method" />
+    <MESSAGE value="fixing bugs on methods" />
+    <MESSAGE value="fixed bugs on About method" />
+    <MESSAGE value="fixed the indentation of alert message to make it look better" />
+    <MESSAGE value="changed outlook for alert pop-up" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed outlook for alert pop-up" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

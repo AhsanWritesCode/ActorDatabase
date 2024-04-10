@@ -1,10 +1,9 @@
 package ca.ucalgary.ahsantariq.demogui;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
 
@@ -72,12 +71,27 @@ public class MainController {
     @FXML private Label status_label;
     @FXML
     void about(ActionEvent event) {
+        Alert about = new Alert(Alert.AlertType.INFORMATION);
+        about.setTitle("About");
+        about.setHeaderText("Message");
+        about.setContentText("Author: Rahnuha Nurain\nAhsan Tariq\nEthan Braum\n\n"
+                + "Email: rahnuha.nurain@ucalgary.ca\nahsan.tariq@ucalgary.ca\nethan.braum@ucalgary.ca\n\n"
+                + "Version: v1.0\n\n"
+                + "This application retrieves and organizes actor information from IMDb links for effortless access and storage.");
 
+        // Set light blue style directly
+        DialogPane dialogPane = about.getDialogPane();
+        dialogPane.setStyle("-fx-background-color: #ADD8E6; " // Light blue background
+                + "-fx-font-family: Arial; " // Arial font family
+                + "-fx-font-size: 14px; " // Font size
+                + "-fx-text-fill: #000000;"); // Black text color
+
+        about.showAndWait();
     }
 
     @FXML
     void exit(ActionEvent event) {
-
+        Platform.exit();
     }
 
     @FXML
