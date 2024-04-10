@@ -203,7 +203,20 @@ public class MainController {
 
     @FXML
     void retire(ActionEvent event) {
+        status_label.setTextFill(Color.BLACK);
+        status_label.setText("");
+        String id1 = retire_id1.getText();
+        if(!data.checkInPair(id1)){
+            status_label.setTextFill(Color.RED);
+            status_label.setText(String.format("Actor is in a co-star pair!"));
 
+        }
+        else {
+            status_label.setTextFill(Color.GREEN);
+            status_label.setText(String.format("Actor has been retired"));
+            data.retire(id1);
+        }
+        viewCoStarPairs();
     }
 
     @FXML
@@ -240,7 +253,25 @@ public class MainController {
 
     @FXML
     void storeNewCoStarPair(ActionEvent event) {
+        status_label.setTextFill(Color.BLACK);
+        status_label.setText("");
+        String id1 = costar_id1.getText();
+        String id2 = costar_id2.getText();
+        if(!data.checkInPair(id1)){
+            status_label.setTextFill(Color.RED);
+            status_label.setText(String.format("Actor 1 is already in a co-star pair!"));
 
+        }
+        else if(!data.checkInPair(id2)){
+            status_label.setTextFill(Color.RED);
+            status_label.setText(String.format("Actor 2 is already in a co-star pair!"));
+        }
+        else {
+            status_label.setTextFill(Color.GREEN);
+            status_label.setText(String.format("Actor 1 and 2 are now in a co-star pair!"));
+            data.storeNewCoStarPair(id1,id2);
+        }
+        viewCoStarPairs();
     }
 
 }
