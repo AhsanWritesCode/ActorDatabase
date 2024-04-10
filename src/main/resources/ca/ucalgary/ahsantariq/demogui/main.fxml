@@ -61,7 +61,7 @@
       </VBox>
    </right>
    <bottom>
-      <Label BorderPane.alignment="CENTER" />
+      <Label fx:id="status_label" BorderPane.alignment="CENTER" />
    </bottom>
    <center>
       <SplitPane dividerPositions="0.5156695156695157" prefHeight="358.0" prefWidth="322.0" BorderPane.alignment="CENTER">

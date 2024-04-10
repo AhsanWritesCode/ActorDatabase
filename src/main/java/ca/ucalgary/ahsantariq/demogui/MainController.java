@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
 import java.io.File;
 
@@ -103,8 +104,10 @@ public class MainController {
     void load(ActionEvent event) {
         FileChooser fc = new FileChooser();
         fc.setTitle("Load a file");
-
-
+        fc.setInitialDirectory(new File("."));
+        fc.setInitialFileName("data.csv");
+        File file = fc.showOpenDialog(new Stage());
+        load(file);
     }
 
     private void load(File file){
