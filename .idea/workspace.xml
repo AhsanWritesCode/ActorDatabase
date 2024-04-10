@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment=" Menu-&gt; close on action method completed.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" afterDir="false" />
-    </list>
+    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="fixing bugs on methods" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +90,7 @@
       <updated>1712092299984</updated>
       <workItem from="1712563293476" duration="1012000" />
       <workItem from="1712607333483" duration="2575000" />
-      <workItem from="1712727279599" duration="489000" />
+      <workItem from="1712727279599" duration="810000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -311,16 +308,37 @@
       <option name="project" value="LOCAL" />
       <updated>1712727215476</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="About method completed">
+      <option name="closed" value="true" />
+      <created>1712727843375</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1712727843375</updated>
+    </task>
+    <task id="LOCAL-00029" summary="working on About method">
+      <option name="closed" value="true" />
+      <created>1712728062569</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1712728062569</updated>
+    </task>
+    <task id="LOCAL-00030" summary="fixing bugs on methods">
+      <option name="closed" value="true" />
+      <created>1712728084671</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1712728084671</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first commit" />
-    <MESSAGE value="Started UI" />
-    <MESSAGE value="More progress on UI" />
     <MESSAGE value="refined boundaries of scroll pane" />
     <MESSAGE value="set pref width of left side panel + elements to 130" />
     <MESSAGE value="set pref width of right side panel + elements to 116" />
@@ -343,7 +361,10 @@
     <MESSAGE value="on action method for menuActorStatistics created" />
     <MESSAGE value="getLoneActorsCount on action method" />
     <MESSAGE value=" Menu-&gt; close on action method completed." />
-    <option name="LAST_COMMIT_MESSAGE" value=" Menu-&gt; close on action method completed." />
+    <MESSAGE value="About method completed" />
+    <MESSAGE value="working on About method" />
+    <MESSAGE value="fixing bugs on methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing bugs on methods" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

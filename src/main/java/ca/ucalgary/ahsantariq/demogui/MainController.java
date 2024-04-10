@@ -49,7 +49,7 @@ public class MainController {
     public void about(ActionEvent actionEvent) {
         // Create an alert to display information about the application
         Alert about = new Alert(Alert.AlertType.INFORMATION, "Author: Rahnuha Nurain, \n Ahsan Tariq, \n Ethan Braum  \n Email: rahnuha.nurain@ucalgary.ca,\n ahsan.tariq@ucalgary.ca,\n ethan.braum@ucalgary.ca " +
-                "nVersion: v1.0 \nThis " +
+                "\nVersion: v1.0 \nThis " +
                 " retrieves and organizes actor information from IMDb links for effortless access and storage\"\n" +
                 "\n" +
                 "\n" +
