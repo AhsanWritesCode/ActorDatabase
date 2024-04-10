@@ -4,6 +4,7 @@ import ca.ucalgary.ahsantariq.demogui.comparators.ActorNameImdbLinkComparator;
 import ca.ucalgary.ahsantariq.demogui.objects.Actor;
 import ca.ucalgary.ahsantariq.demogui.objects.ActorPair;
 import ca.ucalgary.ahsantariq.demogui.objects.Pair;
+import ca.ucalgary.ahsantariq.demogui.util.FileSaver;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -175,6 +176,21 @@ public class MainController {
     }
 
     @FXML
+    void save(ActionEvent event) {
+        FileChooser fc = new FileChooser();
+        fc.setTitle("Save a file");
+        fc.setInitialDirectory(new File("."));
+        fc.setInitialFileName("data.csv");
+        File file = fc.showSaveDialog(new Stage());
+        if (FileSaver.save(file, data)){
+            System.out.printf("Saved to file %s%n", file);
+        } else {
+            System.err.printf("Failed to save to file %s%n", file);
+        }
+
+    }
+
+    @FXML
     void menuActorStatistics(ActionEvent event) {
 
     }
@@ -186,11 +202,6 @@ public class MainController {
 
     @FXML
     void retire(ActionEvent event) {
-
-    }
-
-    @FXML
-    void save(ActionEvent event) {
 
     }
 
