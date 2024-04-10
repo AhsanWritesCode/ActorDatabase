@@ -210,8 +210,8 @@ public class MainController {
     void splitPair(ActionEvent event) {
         status_label.setTextFill(Color.BLACK);
         status_label.setText("");
-        String id1 = sep_id1.getId();
-        String id2 = sep_id2.getId();
+        String id1 = sep_id1.getText();
+        String id2 = sep_id2.getText();
         if(!data.checkInPair(id1)){
             status_label.setTextFill(Color.RED);
             status_label.setText(String.format("Actor 1 is not in a co-star pair!"));
@@ -226,6 +226,8 @@ public class MainController {
             status_label.setText(String.format("These actors are not in the same co-star pair!"));
         }
         else {
+            status_label.setTextFill(Color.GREEN);
+            status_label.setText(String.format("Actor 1 and 2 are separated!"));
             data.splitPair(id1,id2);
         }
         viewCoStarPairs();
