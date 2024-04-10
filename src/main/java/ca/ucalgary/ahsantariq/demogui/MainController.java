@@ -208,7 +208,7 @@ public class MainController {
         String id1 = retire_id1.getText();
         if(!data.checkInPair(id1)){
             status_label.setTextFill(Color.RED);
-            status_label.setText(String.format("Actor is in a co-star pair!"));
+            status_label.setText(String.format("Actor is in a co-star pair so they can't retire until their pair is seperated!"));
 
         }
         else {
