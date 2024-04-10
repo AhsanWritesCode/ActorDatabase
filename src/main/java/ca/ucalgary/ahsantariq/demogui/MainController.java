@@ -43,4 +43,8 @@ public class MainController {
     @FXML
     public void about(ActionEvent actionEvent) {
     }
+
+    @FXML
+    public void retire(ActionEvent actionEvent) {
+    }
 }
