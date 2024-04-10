@@ -118,10 +118,10 @@ public class MainController {
         // Retrieve and print information about all actors from the data
         ArrayList<Actor> actors = data.getAllActors();
         actors.sort(new ActorNameImdbLinkComparator());
-        printActors(actors);
+        viewActors(actors);
     }
 
-    private void printActors(ArrayList<Actor> actors) {
+    private void viewActors(ArrayList<Actor> actors) {
         StringBuilder sb = new StringBuilder();
         // Display header for actor information
         sb.append(ACTOR_HEADER);
