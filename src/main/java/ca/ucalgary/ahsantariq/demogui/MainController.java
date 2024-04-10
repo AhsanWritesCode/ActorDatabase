@@ -14,4 +14,8 @@ public class MainController {
     protected void onHelloButtonClick() {
         welcomeText.setText("Welcome to JavaFX Application!");
     }
+    @FXML
+    private void storeNewCoStarPair(){
+
+    }
 }
