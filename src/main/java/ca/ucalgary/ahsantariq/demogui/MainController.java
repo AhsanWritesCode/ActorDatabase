@@ -55,4 +55,8 @@ public class MainController {
     @FXML
     public void menuActorStatistics(ActionEvent actionEvent) {
     }
+
+    @FXML
+    public void getLoneActorsCount(ActionEvent actionEvent) {
+    }
 }
