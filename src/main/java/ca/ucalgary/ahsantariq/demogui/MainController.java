@@ -47,4 +47,8 @@ public class MainController {
     @FXML
     public void retire(ActionEvent actionEvent) {
     }
+
+    @FXML
+    public void menuPrintActorInfo(ActionEvent actionEvent) {
+    }
 }
