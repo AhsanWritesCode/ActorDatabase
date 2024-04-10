@@ -15,18 +15,19 @@ public class MainController {
     protected void onHelloButtonClick() {
         welcomeText.setText("Welcome to JavaFX Application!");
     }
-
     @FXML
-    private void storeNewCoStarPair() {
+    private void storeNewCoStarPair(){
 
     }
-
     @FXML
-    private void splitPair() {
+    private void splitPair(){
 
     }
-
     @FXML
     public void storeNewActor(ActionEvent actionEvent) {
+    }
+    @FXML
+    public void load(ActionEvent actionEvent) {
+
     }
 }
