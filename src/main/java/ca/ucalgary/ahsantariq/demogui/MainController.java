@@ -3,10 +3,7 @@ package ca.ucalgary.ahsantariq.demogui;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 
 public class MainController {
     @FXML
@@ -47,23 +44,24 @@ public class MainController {
 
     @FXML
     public void about(ActionEvent actionEvent) {
-        // Create an alert to display information about the application
-        Alert about = new Alert(Alert.AlertType.INFORMATION, "Author: Rahnuha Nurain \n Ahsan Tariq \n Ethan Braum  \n Email: rahnuha.nurain@ucalgary.ca \n ahsan.tariq@ucalgary.ca \n ethan.braum@ucalgary.ca " +
-                "\nVersion: v1.0 \nThis " +
-                " retrieves and organizes actor information from IMDb links for effortless access and storage\"\n" +
-                "\n" +
-                "\n" +
-                "\n" +
-                "\n" +
-                "\n" +
-                "\n", ButtonType.OK);
-        // Set the title of the alert
+        Alert about = new Alert(Alert.AlertType.INFORMATION);
         about.setTitle("About");
-        // Set the header text of the alert
         about.setHeaderText("Message");
-        // Show the alert and wait for user interaction
+        about.setContentText("Author: Rahnuha Nurain\nAhsan Tariq\nEthan Braum\n\n"
+                + "Email: rahnuha.nurain@ucalgary.ca\nahsan.tariq@ucalgary.ca\nethan.braum@ucalgary.ca\n\n"
+                + "Version: v1.0\n\n"
+                + "This application retrieves and organizes actor information from IMDb links for effortless access and storage.");
+
+        // Set style directly
+        DialogPane dialogPane = about.getDialogPane();
+        dialogPane.setStyle("-fx-background-color: linear-gradient(to bottom, #ffffff, #d3d3d3); "
+                + "-fx-font-family: Arial; "
+                + "-fx-font-size: 14px; "
+                + "-fx-text-fill: #333333;");
+
         about.showAndWait();
     }
+
 
     @FXML
     public void retire(ActionEvent actionEvent) {
