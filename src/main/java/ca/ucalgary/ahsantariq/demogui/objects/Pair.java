@@ -46,7 +46,12 @@ public abstract class Pair implements Comparable<Pair> {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Pair pair = (Pair) o;
-        return Objects.equals(imdbLink1, pair.imdbLink1) && Objects.equals(imdbLink2, pair.imdbLink2);
+        if (getImdbLink1() == pair.getImdbLink1() && imdbLink1 == pair.imdbLink2){
+            return true;
+        } else if (getImdbLink1() == pair.imdbLink2 && imdbLink2 == pair.getImdbLink1()){
+            return true;
+        }
+        return false;
     }
 
     @Override
