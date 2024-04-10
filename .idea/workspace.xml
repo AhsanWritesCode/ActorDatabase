@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="progressed on maincontroller. viewcostarpairs">
+    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="progressed on maincontroller. save">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" afterDir="false" />
     </list>
@@ -383,15 +383,21 @@
       <option name="project" value="LOCAL" />
       <updated>1712781403978</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="progressed on maincontroller. save">
+      <option name="closed" value="true" />
+      <created>1712781659318</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1712781659318</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="moved files from previous project to new gui project" />
-    <MESSAGE value="Renamed files" />
     <MESSAGE value="program executes (updated MainController.java" />
     <MESSAGE value="progressed on maincontroller" />
     <MESSAGE value="Titles added for MainGUI.java" />
@@ -420,7 +426,19 @@
     <MESSAGE value="progressed on maincontroller. added printactors/viewactors" />
     <MESSAGE value="progressed on maincontroller. viewactors" />
     <MESSAGE value="progressed on maincontroller. viewcostarpairs" />
-    <option name="LAST_COMMIT_MESSAGE" value="progressed on maincontroller. viewcostarpairs" />
+    <MESSAGE value="progressed on maincontroller. save" />
+    <option name="LAST_COMMIT_MESSAGE" value="progressed on maincontroller. save" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java</url>
+          <line>179</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

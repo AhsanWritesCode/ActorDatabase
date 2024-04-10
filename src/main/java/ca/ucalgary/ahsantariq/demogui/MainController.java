@@ -183,11 +183,12 @@ public class MainController {
         fc.setInitialFileName("data.csv");
         File file = fc.showSaveDialog(new Stage());
         if (FileSaver.save(file, data)){
-            System.out.printf("Saved to file %s%n", file);
+            status_label.setTextFill(Color.GREEN);
+            status_label.setText(String.format("Saved to file %s%n", file));
         } else {
-            System.err.printf("Failed to save to file %s%n", file);
+            status_label.setTextFill(Color.RED);
+            status_label.setText(String.format("Failed to save to file %s%n", file));
         }
-
     }
 
     @FXML
@@ -207,7 +208,27 @@ public class MainController {
 
     @FXML
     void splitPair(ActionEvent event) {
+        status_label.setTextFill(Color.BLACK);
+        status_label.setText("");
+        String id1 = sep_id1.getId();
+        String id2 = sep_id2.getId();
+        if(!data.checkInPair(id1)){
+            status_label.setTextFill(Color.RED);
+            status_label.setText(String.format("Actor 1 is not in a co-star pair!"));
 
+        }
+        else if(!data.checkInPair(id2)){
+            status_label.setTextFill(Color.RED);
+            status_label.setText(String.format("Actor 2 is not in a co-star pair!"));
+        }
+        else if (data.getPair(id1).equals(data.getPair(id2))) {
+            status_label.setTextFill(Color.RED);
+            status_label.setText(String.format("These actors are not in the same co-star pair!"));
+        }
+        else {
+            data.splitPair(id1,id2);
+        }
+        viewCoStarPairs();
     }
 
     @FXML
