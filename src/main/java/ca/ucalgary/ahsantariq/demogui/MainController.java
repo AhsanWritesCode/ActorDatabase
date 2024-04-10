@@ -2,6 +2,8 @@ package ca.ucalgary.ahsantariq.demogui;
 
 import ca.ucalgary.ahsantariq.demogui.comparators.ActorNameImdbLinkComparator;
 import ca.ucalgary.ahsantariq.demogui.objects.Actor;
+import ca.ucalgary.ahsantariq.demogui.objects.ActorPair;
+import ca.ucalgary.ahsantariq.demogui.objects.Pair;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -119,6 +121,25 @@ public class MainController {
         ArrayList<Actor> actors = data.getAllActors();
         actors.sort(new ActorNameImdbLinkComparator());
         viewActors(actors);
+        viewCoStarPairs();
+    }
+
+    private void viewCoStarPairs() {
+        StringBuilder sb = new StringBuilder();
+        // Display header for co-star pair information
+        sb.append(PAIR_HEADER);
+        // Display separator line for formatting
+        sb.append(PAIR_SEP);
+        sb.append("\n");
+        // Retrieve and print information about all co-star pairs from the data
+        ArrayList<Pair> pairs = data.getAllPairs();
+        for (Pair pair : pairs) {
+            if (pair instanceof ActorPair actorPair) {
+                // Display co-star pair information using formatted string
+                sb.append(String.format(PAIR_FORMAT, actorPair.getImdbLink1(), actorPair.getImdbLink2()));
+            }
+        }
+        costars_label.setText(sb.toString());
     }
 
     private void viewActors(ArrayList<Actor> actors) {

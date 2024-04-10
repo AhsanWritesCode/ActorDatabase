@@ -550,8 +550,6 @@ public class Menu {
                 // Display co-star pair information using formatted string
                 System.out.printf(PAIR_FORMAT, actorPair.getImdbLink1(), actorPair.getImdbLink2());
             }
-            // Display co-star pair information using formatted string
-
         }
     }
     /**
