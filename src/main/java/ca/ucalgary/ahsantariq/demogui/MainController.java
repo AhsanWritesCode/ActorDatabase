@@ -4,6 +4,8 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 public class MainController {
     @FXML
@@ -52,15 +54,19 @@ public class MainController {
                 + "Version: v1.0\n\n"
                 + "This application retrieves and organizes actor information from IMDb links for effortless access and storage.");
 
-        // Set style directly
+        // Set light blue style directly
         DialogPane dialogPane = about.getDialogPane();
-        dialogPane.setStyle("-fx-background-color: linear-gradient(to bottom, #ffffff, #d3d3d3); "
-                + "-fx-font-family: Arial; "
-                + "-fx-font-size: 14px; "
-                + "-fx-text-fill: #333333;");
+        dialogPane.setStyle("-fx-background-color: #ADD8E6; " // Light blue background
+                + "-fx-font-family: Arial; " // Arial font family
+                + "-fx-font-size: 14px; " // Font size
+                + "-fx-text-fill: #000000;"); // Black text color
 
         about.showAndWait();
     }
+
+
+
+
 
 
     @FXML
