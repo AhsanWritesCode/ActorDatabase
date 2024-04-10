@@ -51,4 +51,8 @@ public class MainController {
     @FXML
     public void menuPrintActorInfo(ActionEvent actionEvent) {
     }
+
+    @FXML
+    public void menuActorStatistics(ActionEvent actionEvent) {
+    }
 }
