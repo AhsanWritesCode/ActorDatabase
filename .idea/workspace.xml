@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="changed outlook for alert pop-up">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" afterDir="false" />
-    </list>
+    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="made pop-up blue and added font Arial" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +90,7 @@
       <updated>1712092299984</updated>
       <workItem from="1712563293476" duration="1012000" />
       <workItem from="1712607333483" duration="2575000" />
-      <workItem from="1712727279599" duration="1566000" />
+      <workItem from="1712727279599" duration="2055000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -358,14 +356,21 @@
       <option name="project" value="LOCAL" />
       <updated>1712728662762</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="made pop-up blue and added font Arial">
+      <option name="closed" value="true" />
+      <created>1712729005379</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1712729005379</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added on-action" />
     <MESSAGE value="created on-action assignments" />
     <MESSAGE value="moved files from previous project to new gui project" />
     <MESSAGE value="Titles added for MainGUI.java" />
@@ -390,7 +395,8 @@
     <MESSAGE value="fixed bugs on About method" />
     <MESSAGE value="fixed the indentation of alert message to make it look better" />
     <MESSAGE value="changed outlook for alert pop-up" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed outlook for alert pop-up" />
+    <MESSAGE value="made pop-up blue and added font Arial" />
+    <option name="LAST_COMMIT_MESSAGE" value="made pop-up blue and added font Arial" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
