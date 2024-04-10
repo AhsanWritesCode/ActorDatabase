@@ -30,4 +30,8 @@ public class MainController {
     public void load(ActionEvent actionEvent) {
 
     }
+
+    @FXML
+    public void save(ActionEvent actionEvent) {
+    }
 }
