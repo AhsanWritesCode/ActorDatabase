@@ -39,4 +39,8 @@ public class MainController {
     @FXML
     public void exit(ActionEvent actionEvent) {
     }
+
+    @FXML
+    public void about(ActionEvent actionEvent) {
+    }
 }
