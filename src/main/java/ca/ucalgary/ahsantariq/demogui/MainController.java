@@ -1,5 +1,7 @@
 package ca.ucalgary.ahsantariq.demogui;
 
+import ca.ucalgary.ahsantariq.demogui.comparators.ActorNameImdbLinkComparator;
+import ca.ucalgary.ahsantariq.demogui.objects.Actor;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -9,6 +11,7 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import java.io.File;
+import java.util.ArrayList;
 
 public class MainController {
 
@@ -108,6 +111,33 @@ public class MainController {
         fc.setInitialFileName("data.csv");
         File file = fc.showOpenDialog(new Stage());
         load(file);
+        viewActors();
+    }
+
+    private void viewActors() {
+        // Retrieve and print information about all actors from the data
+        ArrayList<Actor> actors = data.getAllActors();
+        actors.sort(new ActorNameImdbLinkComparator());
+        printActors(actors);
+    }
+
+    private void printActors(ArrayList<Actor> actors) {
+        StringBuilder sb = new StringBuilder();
+        // Display header for actor information
+        sb.append(ACTOR_HEADER);
+        // Display separator line for formatting
+        sb.append(ACTOR_SEPARATOR);
+        sb.append("\n");
+        for (Actor actor : actors) {
+            // Convert boolean value for retired status to "T" or "F"
+            String retired = "F";
+            if (actor.isRetired()) {
+                retired = "T";
+            }
+            // Display actor information using formatted string
+            sb.append(String.format(ACTOR_FORMAT, actor.getName(), actor.getAge(), actor.getHeight(), actor.getCountry(), actor.getNumberOfAwards(), actor.getImdbLink(), actor.isRetired()));
+        }
+        actors_label.setText(sb.toString());
     }
 
     private void load(File file){

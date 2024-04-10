@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="progressed on maincontroller">
+    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="progressed on maincontroller. added status_label to main.fxml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/ahsantariq/demogui/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/ahsantariq/demogui/main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -352,15 +351,21 @@
       <option name="project" value="LOCAL" />
       <updated>1712728662762</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="progressed on maincontroller. added status_label to main.fxml">
+      <option name="closed" value="true" />
+      <created>1712773134634</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1712773134634</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first commit" />
-    <MESSAGE value="Started UI" />
     <MESSAGE value="More progress on UI" />
     <MESSAGE value="refined boundaries of scroll pane" />
     <MESSAGE value="set pref width of left side panel + elements to 130" />
@@ -393,7 +398,8 @@
     <MESSAGE value="fixed bugs on About method" />
     <MESSAGE value="fixed the indentation of alert message to make it look better" />
     <MESSAGE value="changed outlook for alert pop-up" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed outlook for alert pop-up" />
+    <MESSAGE value="progressed on maincontroller. added status_label to main.fxml" />
+    <option name="LAST_COMMIT_MESSAGE" value="progressed on maincontroller. added status_label to main.fxml" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
