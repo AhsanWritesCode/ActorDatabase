@@ -18,4 +18,8 @@ public class MainController {
     private void storeNewCoStarPair(){
 
     }
+    @FXML
+    private void splitPair(){
+
+    }
 }
