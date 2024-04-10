@@ -1,5 +1,6 @@
 package ca.ucalgary.ahsantariq.demogui;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -38,6 +39,8 @@ public class MainController {
 
     @FXML
     public void exit(ActionEvent actionEvent) {
+        Platform.exit();
+
     }
 
     @FXML
