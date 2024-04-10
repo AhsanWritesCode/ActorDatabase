@@ -8,7 +8,7 @@ public class MainController {
     @FXML
     private Label welcomeText;
     @FXML
-    private Button createCoStarButton;
+    private Button createCoStarButton, splitCoStarPair;
 
     @FXML
     protected void onHelloButtonClick() {
