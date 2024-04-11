@@ -53,8 +53,8 @@
    <right>
       <VBox prefHeight="358.0" prefWidth="115.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField prefWidth="116.0" />
-            <Button fx:id="info_id1" mnemonicParsing="false" onAction="#menuPrintActorInfo" prefHeight="25.0" prefWidth="115.0" text="Actor Info" />
+            <TextField fx:id="info_id1" prefWidth="116.0" />
+            <Button fx:id="actor_info" mnemonicParsing="false" onAction="#menuPrintActorInfo" prefHeight="25.0" prefWidth="115.0" text="Actor Info" />
             <Button mnemonicParsing="false" onAction="#menuActorStatistics" prefHeight="25.0" prefWidth="115.0" text="Actor Stats" />
          </children>
       </VBox>

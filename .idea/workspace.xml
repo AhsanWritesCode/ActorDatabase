@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="Edited GUI setup">
+    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="Fixed GUI spacing (again)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/ahsantariq/demogui/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/ahsantariq/demogui/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -473,14 +473,21 @@
       <option name="project" value="LOCAL" />
       <updated>1712819846512</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Fixed GUI spacing (again)">
+      <option name="closed" value="true" />
+      <created>1712820642579</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1712820642579</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="MainController.java" />
     <MESSAGE value="new on action method for about created on MainController.java" />
     <MESSAGE value="retire - on action method created on MainController.java" />
     <MESSAGE value="menuPrintActorInfo on action method created" />
@@ -505,7 +512,8 @@
     <MESSAGE value="Updated actor and pair display in GUI" />
     <MESSAGE value="Fixed GUI spacing" />
     <MESSAGE value="Edited GUI setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited GUI setup" />
+    <MESSAGE value="Fixed GUI spacing (again)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed GUI spacing (again)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

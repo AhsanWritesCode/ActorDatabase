@@ -68,7 +68,10 @@ public class MainController {
     private Label costars_label;
 
     @FXML
-    private Button info_id1;
+    private Button actor_info;
+
+    @FXML
+    private TextField info_id1;
 
     @FXML
     private TextField retire_id1;
@@ -209,7 +212,13 @@ public class MainController {
 
     @FXML
     void menuPrintActorInfo(ActionEvent event) {
-
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Actor Info");
+        // should this be the text field instead of the button?
+        Actor actor = data.getActor(info_id1.getText());
+        alert.setHeaderText("Actor: " + actor.getImdbLink());
+        alert.setContentText(String.format("%s%n%s%n%s%n%s%n%s%n%s%n", actor.getName(),actor.getImdbLink(),actor.getAge(),actor.getHeight(),actor.getCountry(),actor.getNumberOfAwards()));
+        alert.showAndWait();
     }
 
     @FXML
