@@ -125,7 +125,7 @@ public class MainController {
         viewUnpaired();
     }
 
-    private void viewActors() {
+    public void viewActors() {
         // Retrieve and print information about all actors from the data
         ArrayList<Actor> actors = data.getAllActors();
         actors.sort(new ActorNameImdbLinkComparator());
@@ -133,14 +133,14 @@ public class MainController {
         actors_label.setText(s);
     }
 
-    private void viewUnpaired() {
+    public void viewUnpaired() {
         // Retrieve and print information about all actors from the data
         ArrayList<Actor> actors = data.getActorsNotInPair();
         actors.sort(new ActorNameImdbLinkComparator());
         String s = viewActors(actors);
         unpaired_label.setText(s);
     }
-    private void viewCoStarPairs() {
+    public void viewCoStarPairs() {
         StringBuilder sb = new StringBuilder();
         // Display header for co-star pair information
         sb.append(PAIR_HEADER);
@@ -292,7 +292,7 @@ public class MainController {
             throw new RuntimeException(e);
         }
         AddController cont = fxmlLoader.getController();
-        cont.setData(data);
+        cont.setData(data, this);
         Stage stage = new Stage();
         stage.setTitle("Add New Actor");
         stage.setScene(scene);

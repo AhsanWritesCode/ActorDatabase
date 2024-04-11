@@ -26,8 +26,11 @@ public class AddController {
     private TextField passName;
 
     private Data data;
-    public void setData(Data data){
+
+    private MainController mc;
+    public void setData(Data data,MainController mc){
         this.data = data;
+        this.mc = mc;
     }
 
     @FXML
@@ -39,5 +42,8 @@ public class AddController {
         int awardsWon = Integer.parseInt(passAwardsWon.getText());
         String imdbLink = passImdbLink.getText();
         data.storeNewActor(name,age,height,country,awardsWon,imdbLink);
+        mc.viewUnpaired();
+        mc.viewActors();
+        mc.viewCoStarPairs();
     }
 }
