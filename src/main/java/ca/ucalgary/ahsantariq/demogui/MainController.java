@@ -4,6 +4,7 @@ import ca.ucalgary.ahsantariq.demogui.comparators.ActorNameImdbLinkComparator;
 import ca.ucalgary.ahsantariq.demogui.objects.Actor;
 import ca.ucalgary.ahsantariq.demogui.objects.ActorPair;
 import ca.ucalgary.ahsantariq.demogui.objects.Pair;
+import ca.ucalgary.ahsantariq.demogui.util.FileLoader;
 import ca.ucalgary.ahsantariq.demogui.util.FileSaver;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -173,12 +174,14 @@ public class MainController {
     private void load(File file){
         status_label.setTextFill(Color.BLACK);
         status_label.setText("");
+        Data data = FileLoader.load(file);
         if (data == null){
             status_label.setTextFill(Color.RED);
             status_label.setText(String.format("Failed to load from file %s%n", file));
         } else{
             status_label.setTextFill(Color.GREEN);
             status_label.setText(String.format("Loaded data from file %s%n", file));
+
             MainController.data = data;
         }
     }
