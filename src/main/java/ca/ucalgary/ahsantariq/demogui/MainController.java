@@ -217,7 +217,7 @@ public class MainController {
         // should this be the text field instead of the button?
         Actor actor = data.getActor(info_id1.getText());
         alert.setHeaderText("Actor: " + actor.getImdbLink());
-        alert.setContentText(String.format("%s%n%s%n%s%n%s%n%s%n%s%n", actor.getName(),actor.getImdbLink(),actor.getAge(),actor.getHeight(),actor.getCountry(),actor.getNumberOfAwards()));
+        alert.setContentText(String.format("Name: %s%nImdb Link: %s%nAge: %s%nHeight: %s%nCountry: %s%nAwards Won: %s%n", actor.getName(),actor.getImdbLink(),actor.getAge(),actor.getHeight(),actor.getCountry(),actor.getNumberOfAwards()));
         alert.showAndWait();
     }
 

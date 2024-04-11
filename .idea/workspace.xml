@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="Fixed GUI spacing (again)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="Added actor info alert">
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -481,14 +480,21 @@
       <option name="project" value="LOCAL" />
       <updated>1712820642579</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Added actor info alert">
+      <option name="closed" value="true" />
+      <created>1712821303332</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1712821303332</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new on action method for about created on MainController.java" />
     <MESSAGE value="retire - on action method created on MainController.java" />
     <MESSAGE value="menuPrintActorInfo on action method created" />
     <MESSAGE value="on action method for menuActorStatistics created" />
@@ -513,7 +519,8 @@
     <MESSAGE value="Fixed GUI spacing" />
     <MESSAGE value="Edited GUI setup" />
     <MESSAGE value="Fixed GUI spacing (again)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed GUI spacing (again)" />
+    <MESSAGE value="Added actor info alert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added actor info alert" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
