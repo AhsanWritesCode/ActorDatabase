@@ -177,7 +177,7 @@ public class MainController {
         return sb.toString();
     }
 
-    private void load(File file){
+    public void load(File file){
         status_label.setTextFill(Color.BLACK);
         status_label.setText("");
         Data data = FileLoader.load(file);
@@ -187,8 +187,11 @@ public class MainController {
         } else{
             status_label.setTextFill(Color.GREEN);
             status_label.setText(String.format("Loaded data from file %s%n", file));
-
             MainController.data = data;
+            viewActors();
+            viewCoStarPairs();
+            viewUnpaired();
+
         }
     }
 
