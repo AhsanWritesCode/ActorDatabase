@@ -207,7 +207,16 @@ public class MainController {
 
     @FXML
     void menuActorStatistics(ActionEvent event) {
-
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Pair Summary");
+        // should this be the text field instead of the button?
+        alert.setHeaderText("Statistics about actors and co-star pairs");
+        String s = "";
+        s += String.format("There are %d actors.%n", data.getActorCount());
+        s += String.format("There are %d co-star pairs.%n", data.getPairCount());
+        s += String.format("There are %d actors not in a co-star pair.%n", data.getLoneActorsCount());
+        alert.setContentText(s);
+        alert.showAndWait();
     }
 
     @FXML
