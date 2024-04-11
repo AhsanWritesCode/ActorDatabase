@@ -43,6 +43,8 @@ public class MainGUI extends Application {
         stage.setTitle("Actor Database");
         stage.setScene(scene);
         stage.show();
-        cont.load(file);
+        if (file != null) {
+            cont.load(file);
+        }
     }
 }
