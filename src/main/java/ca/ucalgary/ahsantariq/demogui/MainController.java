@@ -9,12 +9,15 @@ import ca.ucalgary.ahsantariq.demogui.util.FileSaver;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class MainController {
@@ -281,7 +284,19 @@ public class MainController {
 
     @FXML
     void storeNewActor(ActionEvent event) {
-
+        FXMLLoader fxmlLoader = new FXMLLoader(MainGUI.class.getResource("add.fxml"));
+        Scene scene = null;
+        try {
+            scene = new Scene(fxmlLoader.load(), 400, 400);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        AddController cont = fxmlLoader.getController();
+        cont.setData(data);
+        Stage stage = new Stage();
+        stage.setTitle("Add New Actor");
+        stage.setScene(scene);
+        stage.showAndWait();
     }
 
     @FXML
