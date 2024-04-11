@@ -12,26 +12,26 @@ public class FileLoader {
     public static Data load(File file) {
         // Create a new Data object to store loaded data
         Data data = new Data();
-        try(Scanner scanner = new Scanner(file)){
+        try (Scanner scanner = new Scanner(file)) {
             // Read the first line to check if it contains "Actors"
             String line = scanner.nextLine();
-            if (!line.equals("Actors")){
+            if (!line.equals("Actors")) {
                 // Print error message if header not found
                 System.err.println("Could not find Actors header!");
                 return null;
             }
             boolean found_pairs = false;
             // Loop through lines until "Pairs" header or end of file is found
-            while (scanner.hasNextLine()){
+            while (scanner.hasNextLine()) {
                 line = scanner.nextLine();
-                if(line.equals("Pairs")){
+                if (line.equals("Pairs")) {
                     found_pairs = true;
                     break; // Exit loop if "Pairs" header is found
                 }
                 // Split the line into parts using comma as delimiter
                 String[] parts = line.split(",");
                 // Check if the parts array has correct length
-                if (parts.length != 6){
+                if (parts.length != 6) {
                     // Print error message if length is incorrect
                     System.err.printf("Actor entry %s was not the right length!%n", Arrays.toString(parts));
                 }
@@ -43,15 +43,15 @@ public class FileLoader {
                 int awards = Integer.parseInt(parts[4]);
                 String imdbLink = parts[5];
                 // Store actor data in the Data object
-                data.storeNewActor(name,age,height,country,awards,imdbLink);
+                data.storeNewActor(name, age, height, country, awards, imdbLink);
             }
-            if (!found_pairs){
+            if (!found_pairs) {
                 // Print error message if "Pairs" header not found
                 System.err.println("Could not find Pairs header!");
                 return null;// Return null indicating failure
             }
             // Loop through lines to read co-star pairs
-            while (scanner.hasNextLine()){
+            while (scanner.hasNextLine()) {
                 line = scanner.nextLine();
                 // Split the line into parts using comma as delimiter
                 String[] parts = line.split(",");

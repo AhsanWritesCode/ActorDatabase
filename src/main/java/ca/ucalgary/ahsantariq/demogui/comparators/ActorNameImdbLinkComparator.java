@@ -4,7 +4,7 @@ import ca.ucalgary.ahsantariq.demogui.objects.Actor;
 
 import java.util.Comparator;
 
-public class ActorNameImdbLinkComparator implements Comparator<Actor>{
+public class ActorNameImdbLinkComparator implements Comparator<Actor> {
 
     @Override
     public int compare(Actor o1, Actor o2) {

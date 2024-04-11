@@ -22,14 +22,19 @@ import java.util.ArrayList;
 
 public class MainController {
 
-    private static Data data = new Data();
-
     // Format string for displaying actor information
     private static final String ACTOR_FORMAT = "%-20s\t%-3s\t%-6s\t%-30s\t%-11s\t%-36s\t%-7s%n";
     // Header for displaying actor information
     private static final String ACTOR_HEADER = String.format(ACTOR_FORMAT, "NAME", "AGE", "HEIGHT", "COUNTRY", "# OF AWARDS", "IMDB LINK", "RETIRED");
+    // Format string for displaying actor pairs
+    private static final String PAIR_FORMAT = "%-32s %-33s%n";
+    // Header for displaying actor pairs
+    private static final String PAIR_HEADER = String.format(PAIR_FORMAT, "IMDBLINK1", "IMDBLINK2");
+    private static Data data = new Data();
     // Separator string for formatting purposes
     private static String ACTOR_SEPARATOR = "";
+    private static String PAIR_SEP = "";
+    // Separator string for formatting purposes
 
     // Static block to initialize the separator string
     static {
@@ -38,14 +43,6 @@ public class MainController {
             ACTOR_SEPARATOR += "-";
         }
     }
-
-    // Format string for displaying actor pairs
-    private static final String PAIR_FORMAT = "%-32s %-33s%n";
-    // Header for displaying actor pairs
-    private static final String PAIR_HEADER = String.format(PAIR_FORMAT, "IMDBLINK1", "IMDBLINK2");
-    // Separator string for formatting purposes
-
-    private static String PAIR_SEP = "";
 
     // Static block to initialize the separator string
     static {
@@ -85,7 +82,9 @@ public class MainController {
     @FXML
     private TextField sep_id2;
 
-    @FXML private Label status_label;
+    @FXML
+    private Label status_label;
+
     @FXML
     void about(ActionEvent event) {
         Alert about = new Alert(Alert.AlertType.INFORMATION);
@@ -140,6 +139,7 @@ public class MainController {
         String s = viewActors(actors);
         unpaired_label.setText(s);
     }
+
     public void viewCoStarPairs() {
         StringBuilder sb = new StringBuilder();
         // Display header for co-star pair information
@@ -177,14 +177,14 @@ public class MainController {
         return sb.toString();
     }
 
-    public void load(File file){
+    public void load(File file) {
         status_label.setTextFill(Color.BLACK);
         status_label.setText("");
         Data data = FileLoader.load(file);
-        if (data == null){
+        if (data == null) {
             status_label.setTextFill(Color.RED);
             status_label.setText(String.format("Failed to load from file %s%n", file));
-        } else{
+        } else {
             status_label.setTextFill(Color.GREEN);
             status_label.setText(String.format("Loaded data from file %s%n", file));
             MainController.data = data;
@@ -202,7 +202,7 @@ public class MainController {
         fc.setInitialDirectory(new File("."));
         fc.setInitialFileName("data.csv");
         File file = fc.showSaveDialog(new Stage());
-        if (FileSaver.save(file, data)){
+        if (FileSaver.save(file, data)) {
             status_label.setTextFill(Color.GREEN);
             status_label.setText(String.format("Saved to file %s%n", file));
         } else {
@@ -232,7 +232,7 @@ public class MainController {
         // should this be the text field instead of the button?
         Actor actor = data.getActor(info_id1.getText());
         alert.setHeaderText("Actor: " + actor.getImdbLink());
-        alert.setContentText(String.format("Name: %s%nImdb Link: %s%nAge: %s%nHeight: %s%nCountry: %s%nAwards Won: %s%n", actor.getName(),actor.getImdbLink(),actor.getAge(),actor.getHeight(),actor.getCountry(),actor.getNumberOfAwards()));
+        alert.setContentText(String.format("Name: %s%nImdb Link: %s%nAge: %s%nHeight: %s%nCountry: %s%nAwards Won: %s%n", actor.getName(), actor.getImdbLink(), actor.getAge(), actor.getHeight(), actor.getCountry(), actor.getNumberOfAwards()));
         alert.showAndWait();
     }
 
@@ -241,12 +241,11 @@ public class MainController {
         status_label.setTextFill(Color.BLACK);
         status_label.setText("");
         String id1 = retire_id1.getText();
-        if(!data.checkInPair(id1)){
+        if (!data.checkInPair(id1)) {
             status_label.setTextFill(Color.RED);
             status_label.setText(String.format("Actor is in a co-star pair so they can't retire until their pair is seperated!"));
 
-        }
-        else {
+        } else {
             status_label.setTextFill(Color.GREEN);
             status_label.setText(String.format("Actor has been retired"));
             data.retire(id1);
@@ -262,23 +261,20 @@ public class MainController {
         status_label.setText("");
         String id1 = sep_id1.getText();
         String id2 = sep_id2.getText();
-        if(!data.checkInPair(id1)){
+        if (!data.checkInPair(id1)) {
             status_label.setTextFill(Color.RED);
             status_label.setText(String.format("Actor 1 is not in a co-star pair!"));
 
-        }
-        else if(!data.checkInPair(id2)){
+        } else if (!data.checkInPair(id2)) {
             status_label.setTextFill(Color.RED);
             status_label.setText(String.format("Actor 2 is not in a co-star pair!"));
-        }
-        else if (data.getPair(id1).equals(data.getPair(id2))) {
+        } else if (data.getPair(id1).equals(data.getPair(id2))) {
             status_label.setTextFill(Color.RED);
             status_label.setText(String.format("These actors are not in the same co-star pair!"));
-        }
-        else {
+        } else {
             status_label.setTextFill(Color.GREEN);
             status_label.setText(String.format("Actor 1 and 2 are separated!"));
-            data.splitPair(id1,id2);
+            data.splitPair(id1, id2);
         }
         viewActors();
         viewCoStarPairs();
@@ -308,19 +304,17 @@ public class MainController {
         status_label.setText("");
         String id1 = costar_id1.getText();
         String id2 = costar_id2.getText();
-        if(!data.checkInPair(id1)){
+        if (!data.checkInPair(id1)) {
             status_label.setTextFill(Color.RED);
             status_label.setText(String.format("Actor 1 is already in a co-star pair!"));
 
-        }
-        else if(!data.checkInPair(id2)){
+        } else if (!data.checkInPair(id2)) {
             status_label.setTextFill(Color.RED);
             status_label.setText(String.format("Actor 2 is already in a co-star pair!"));
-        }
-        else {
+        } else {
             status_label.setTextFill(Color.GREEN);
             status_label.setText(String.format("Actor 1 and 2 are now in a co-star pair!"));
-            data.storeNewCoStarPair(id1,id2);
+            data.storeNewCoStarPair(id1, id2);
         }
         viewActors();
         viewCoStarPairs();

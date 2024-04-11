@@ -9,17 +9,6 @@ import java.io.File;
 import java.io.IOException;
 
 public class MainGUI extends Application {
-    @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(MainGUI.class.getResource("main.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 800, 600);
-        MainController cont = fxmlLoader.getController();
-        stage.setTitle("Actor Database");
-        stage.setScene(scene);
-        stage.show();
-        cont.load(file);
-    }
-
     private static File file = null;
 
     public static void main(String[] args) {
@@ -44,5 +33,16 @@ public class MainGUI extends Application {
             // If the file exists and is readable, call the menuLoop method from the Menu class with the file
             launch();
         }
+    }
+
+    @Override
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(MainGUI.class.getResource("main.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 800, 600);
+        MainController cont = fxmlLoader.getController();
+        stage.setTitle("Actor Database");
+        stage.setScene(scene);
+        stage.show();
+        cont.load(file);
     }
 }

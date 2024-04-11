@@ -36,7 +36,7 @@ public class FileSaver {
             fw.write("Pairs\n");
             ArrayList<Pair> pairs = data.getAllPairs();
             Collections.sort(pairs);
-            for (Pair pair: pairs) {
+            for (Pair pair : pairs) {
                 // pairs always contain 2 people
                 fw.write(String.format("%s,%s\n",
                         pair.getImdbLink1(),

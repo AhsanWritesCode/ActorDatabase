@@ -178,7 +178,7 @@ public class Data {
                 actorsPerCountryAscending.put(country, actorsPerCountryAscending.getOrDefault(country, 0) + 1);
             }
         }
-    return actorsInCountryAscendingList;
+        return actorsInCountryAscendingList;
     }
 
     public SortedMap<String, Integer> getActorsPerCountryAscending() {

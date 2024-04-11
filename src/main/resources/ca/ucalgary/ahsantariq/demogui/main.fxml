@@ -1,102 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.VBox?>
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.ucalgary.ahsantariq.demogui.MainController">
-   <top>
-      <MenuBar BorderPane.alignment="CENTER">
-        <menus>
-          <Menu mnemonicParsing="false" text="File">
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21"
+            fx:controller="ca.ucalgary.ahsantariq.demogui.MainController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#load" text="Load"/>
+                        <MenuItem mnemonicParsing="false" onAction="#save" text="Save"/>
+                        <MenuItem mnemonicParsing="false" onAction="#exit" text="Close"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#storeNewActor" text="Add Actor"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#about" text="About"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <left>
+        <VBox prefHeight="358.0" prefWidth="130.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="costar_id1" prefWidth="130.0"/>
+                <TextField fx:id="costar_id2" prefWidth="130.0"/>
+                <Button fx:id="createCoStarButton" mnemonicParsing="false" onAction="#storeNewCoStarPair"
+                        prefHeight="25.0" prefWidth="130.0" text="Create Co-Star Pair"/>
+                <TextField fx:id="sep_id1" prefWidth="130.0"/>
+                <TextField fx:id="sep_id2" prefWidth="130.0"/>
+                <Button fx:id="splitCoStarPair" mnemonicParsing="false" onAction="#splitPair" prefWidth="130.0"
+                        text="Split Co-Star Pair"/>
+                <TextField fx:id="retire_id1" prefWidth="130.0"/>
+                <Button mnemonicParsing="false" onAction="#retire" prefWidth="130.0" text="Retire Actor"/>
+            </children>
+        </VBox>
+    </left>
+    <right>
+        <VBox prefHeight="358.0" prefWidth="115.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="info_id1" prefWidth="116.0"/>
+                <Button fx:id="actor_info" mnemonicParsing="false" onAction="#menuPrintActorInfo" prefHeight="25.0"
+                        prefWidth="115.0" text="Actor Info"/>
+                <Button mnemonicParsing="false" onAction="#menuActorStatistics" prefHeight="25.0" prefWidth="115.0"
+                        text="Actor Stats"/>
+            </children>
+        </VBox>
+    </right>
+    <bottom>
+        <Label fx:id="status_label" BorderPane.alignment="CENTER"/>
+    </bottom>
+    <center>
+        <SplitPane dividerPositions="0.5156695156695157" prefHeight="356.0" prefWidth="377.0"
+                   BorderPane.alignment="CENTER">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#load" text="Load" />
-                  <MenuItem mnemonicParsing="false" onAction="#save" text="Save" />
-                  <MenuItem mnemonicParsing="false" onAction="#exit" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#storeNewActor" text="Add Actor" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
-   </top>
-   <left>
-      <VBox prefHeight="358.0" prefWidth="130.0" BorderPane.alignment="CENTER">
-         <children>
-            <TextField fx:id="costar_id1" prefWidth="130.0" />
-            <TextField fx:id="costar_id2" prefWidth="130.0" />
-            <Button fx:id="createCoStarButton" mnemonicParsing="false" onAction="#storeNewCoStarPair" prefHeight="25.0" prefWidth="130.0" text="Create Co-Star Pair" />
-            <TextField fx:id="sep_id1" prefWidth="130.0" />
-            <TextField fx:id="sep_id2" prefWidth="130.0" />
-            <Button fx:id="splitCoStarPair" mnemonicParsing="false" onAction="#splitPair" prefWidth="130.0" text="Split Co-Star Pair" />
-            <TextField fx:id="retire_id1" prefWidth="130.0" />
-            <Button mnemonicParsing="false" onAction="#retire" prefWidth="130.0" text="Retire Actor" />
-         </children>
-      </VBox>
-   </left>
-   <right>
-      <VBox prefHeight="358.0" prefWidth="115.0" BorderPane.alignment="CENTER">
-         <children>
-            <TextField fx:id="info_id1" prefWidth="116.0" />
-            <Button fx:id="actor_info" mnemonicParsing="false" onAction="#menuPrintActorInfo" prefHeight="25.0" prefWidth="115.0" text="Actor Info" />
-            <Button mnemonicParsing="false" onAction="#menuActorStatistics" prefHeight="25.0" prefWidth="115.0" text="Actor Stats" />
-         </children>
-      </VBox>
-   </right>
-   <bottom>
-      <Label fx:id="status_label" BorderPane.alignment="CENTER" />
-   </bottom>
-   <center>
-      <SplitPane dividerPositions="0.5156695156695157" prefHeight="356.0" prefWidth="377.0" BorderPane.alignment="CENTER">
-        <items>
-            <ScrollPane prefHeight="355.0">
-              <content>
-                <AnchorPane prefHeight="354.0" prefWidth="171.0">
-                     <children>
-                        <Label fx:id="costars_label" />
-                     </children>
-                  </AnchorPane>
-              </content>
-            </ScrollPane>
-            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="353.0" prefWidth="179.0">
-              <items>
-                  <ScrollPane prefHeight="173.0" prefWidth="177.0">
+                <ScrollPane prefHeight="355.0">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
-                           <children>
-                              <Label fx:id="unpaired_label" />
-                           </children>
+                        <AnchorPane prefHeight="354.0" prefWidth="171.0">
+                            <children>
+                                <Label fx:id="costars_label"/>
+                            </children>
                         </AnchorPane>
                     </content>
-                  </ScrollPane>
-                  <ScrollPane prefHeight="167.0" prefWidth="177.0">
-                    <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
-                           <children>
-                              <Label fx:id="actors_label" />
-                           </children>
-                        </AnchorPane>
-                    </content>
-                  </ScrollPane>
-              </items>
-            </SplitPane>
-        </items>
-      </SplitPane>
-   </center>
+                </ScrollPane>
+                <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="353.0" prefWidth="179.0">
+                    <items>
+                        <ScrollPane prefHeight="173.0" prefWidth="177.0">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <Label fx:id="unpaired_label"/>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </ScrollPane>
+                        <ScrollPane prefHeight="167.0" prefWidth="177.0">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <Label fx:id="actors_label"/>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </ScrollPane>
+                    </items>
+                </SplitPane>
+            </items>
+        </SplitPane>
+    </center>
 </BorderPane>
