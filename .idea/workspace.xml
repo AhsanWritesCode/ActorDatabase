@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="changed maingui loading">
+    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="moved jar location">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-GUI.jar" beforeDir="false" afterPath="$PROJECT_DIR$/demo-GUI.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/AddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/AddController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +68,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15136719",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.JavaFX",
@@ -106,22 +108,6 @@
       <workItem from="1712563293476" duration="1012000" />
       <workItem from="1712607333483" duration="2575000" />
       <workItem from="1712727279599" duration="1566000" />
-    </task>
-    <task id="LOCAL-00008" summary="added on-action">
-      <option name="closed" value="true" />
-      <created>1712175014496</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1712175014496</updated>
-    </task>
-    <task id="LOCAL-00009" summary="created on-action assignments">
-      <option name="closed" value="true" />
-      <created>1712175296630</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1712175296630</updated>
     </task>
     <task id="LOCAL-00010" summary="moved files from previous project to new gui project">
       <option name="closed" value="true" />
@@ -499,14 +485,29 @@
       <option name="project" value="LOCAL" />
       <updated>1712875185837</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="moved jar location">
+      <option name="closed" value="true" />
+      <created>1712875837940</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1712875837940</updated>
+    </task>
+    <task id="LOCAL-00058" summary="moved jar location">
+      <option name="closed" value="true" />
+      <created>1712875845403</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1712875845403</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed the indentation of alert message to make it look better" />
     <MESSAGE value="changed outlook for alert pop-up" />
     <MESSAGE value="progressed on maincontroller. added status_label to main.fxml" />
     <MESSAGE value="progressed on maincontroller. added printactors/viewactors" />
@@ -531,7 +532,8 @@
     <MESSAGE value="reformatted code + created jar file" />
     <MESSAGE value="added jar file" />
     <MESSAGE value="changed maingui loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed maingui loading" />
+    <MESSAGE value="moved jar location" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved jar location" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
