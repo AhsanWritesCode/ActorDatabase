@@ -40,12 +40,19 @@ public class MainGUI extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
+        // Create an FXMLLoader object to load the FXML file
         FXMLLoader fxmlLoader = new FXMLLoader(MainGUI.class.getResource("main.fxml"));
+        // Create a Scene object using the loaded FXML file and set its dimensions
         Scene scene = new Scene(fxmlLoader.load(), 800, 600);
+        // Get the controller associated with the FXML file
         MainController cont = fxmlLoader.getController();
+        // Set the title of the stage
         stage.setTitle("Actor Database");
+        // Set the scene to the stage
         stage.setScene(scene);
+        // Display the stage
         stage.show();
+        // If a file is specified, load it into the controller
         if (file != null) {
             cont.load(file);
         }
