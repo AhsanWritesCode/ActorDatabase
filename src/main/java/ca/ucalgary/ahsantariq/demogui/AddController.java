@@ -159,7 +159,7 @@ public class AddController {
 
             about.showAndWait();
         }
-        if (!name.isEmpty() && age != 0 && height != 0 && !country.isEmpty() && awardsWon != 0 && !imdbLink.isEmpty()) {
+        if (!name.isEmpty() && age != 0 && height != 0 && !country.isEmpty() && awardsWon >= 0 && !imdbLink.isEmpty()) {
             data.storeNewActor(name, age, height, country, awardsWon, imdbLink);
         }
         mc.viewUnpaired();
