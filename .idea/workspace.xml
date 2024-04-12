@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="added all error checking for adding pair">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-GUI.jar" beforeDir="false" afterPath="$PROJECT_DIR$/demo-GUI.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/objects/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/objects/Pair.java" afterDir="false" />
-    </list>
+    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="updating" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,14 +104,6 @@
       <workItem from="1712563293476" duration="1012000" />
       <workItem from="1712607333483" duration="2575000" />
       <workItem from="1712727279599" duration="1566000" />
-    </task>
-    <task id="LOCAL-00024" summary="menuPrintActorInfo on action method created">
-      <option name="closed" value="true" />
-      <created>1712726878407</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1712726878407</updated>
     </task>
     <task id="LOCAL-00025" summary="on action method for menuActorStatistics created">
       <option name="closed" value="true" />
@@ -501,14 +489,21 @@
       <option name="project" value="LOCAL" />
       <updated>1712948488646</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="updating">
+      <option name="closed" value="true" />
+      <created>1712952558340</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1712952558340</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed GUI spacing (again)" />
     <MESSAGE value="Added actor info alert" />
     <MESSAGE value="changed actor info format" />
     <MESSAGE value="Implemented data stats alert" />
@@ -533,7 +528,8 @@
     <MESSAGE value="Fixed bug in file saver" />
     <MESSAGE value="added error checking for adding pair" />
     <MESSAGE value="added all error checking for adding pair" />
-    <option name="LAST_COMMIT_MESSAGE" value="added all error checking for adding pair" />
+    <MESSAGE value="updating" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
