@@ -232,17 +232,25 @@ public class MainController {
 
     @FXML
     void menuActorStatistics(ActionEvent event) {
+        // Create an alert dialog for displaying statistics
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Pair Summary");
-        // should this be the text field instead of the button?
+        alert.setTitle("Pair Summary"); // Set dialog title
+        // Set dialog header text to describe the purpose of the statistics
         alert.setHeaderText("Statistics about actors and co-star pairs");
+
+        // Construct a string with statistics information
         String s = "";
-        s += String.format("There are %d actors.%n", data.getActorCount());
-        s += String.format("There are %d co-star pairs.%n", data.getPairCount());
-        s += String.format("There are %d actors not in a co-star pair.%n", data.getLoneActorsCount());
+        s += String.format("There are %d actors.%n", data.getActorCount()); // Number of actors
+        s += String.format("There are %d co-star pairs.%n", data.getPairCount()); // Number of co-star pairs
+        s += String.format("There are %d actors not in a co-star pair.%n", data.getLoneActorsCount()); // Number of actors not in a pair
+
+        // Set the content of the alert dialog to display the statistics
         alert.setContentText(s);
+
+        // Show the alert dialog and wait for user interaction
         alert.showAndWait();
     }
+
 
     @FXML
     void menuPrintActorInfo(ActionEvent event) {
