@@ -424,7 +424,7 @@ public class Menu {
                 System.out.printf("Actor associated with link %s is already in a pair!%n", imdbLink1);
             } else if (data.checkInPair(imdbLink2)) {
                 System.out.printf("Actor associated with link %s is already in a pair!%n", imdbLink2);
-            } else if (imdbLink1 == imdbLink2) {
+            } else if (Objects.equals(imdbLink1, imdbLink2)) {
                 System.out.printf("Actors cannot be in a co-star pair with themselves!");
             }
             else {
