@@ -306,7 +306,7 @@ public class MainController {
         } else if (!data.checkInPair(id2)) {
             status_label.setTextFill(Color.RED);
             status_label.setText(String.format("Actor 2 is not in a co-star pair!"));
-        } else if (data.getPair(id1).equals(data.getPair(id2))) {
+        } else if (!data.getPair(id1).equals(data.getPair(id2))) {
             status_label.setTextFill(Color.RED);
             status_label.setText(String.format("These actors are not in the same co-star pair!"));
         } else {
