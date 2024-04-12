@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="Added country stats button and view">
+      <change beforePath="$PROJECT_DIR$/demo-GUI.jar" beforeDir="false" afterPath="$PROJECT_DIR$/demo-GUI.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/ahsantariq/demogui/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/ahsantariq/demogui/main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

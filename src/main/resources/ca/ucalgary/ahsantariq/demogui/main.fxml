@@ -37,7 +37,7 @@
         </MenuBar>
     </top>
     <left>
-        <VBox prefHeight="358.0" prefWidth="130.0" BorderPane.alignment="CENTER">
+        <VBox prefWidth="130.0" BorderPane.alignment="CENTER">
             <children>
                 <TextField fx:id="costar_id1" prefWidth="130.0" />
                 <TextField fx:id="costar_id2" prefWidth="130.0" />
@@ -51,7 +51,7 @@
         </VBox>
     </left>
     <right>
-        <VBox prefHeight="358.0" prefWidth="115.0" BorderPane.alignment="CENTER">
+        <VBox prefWidth="115.0" BorderPane.alignment="CENTER">
             <children>
                 <TextField fx:id="info_id1" prefWidth="116.0" />
                 <Button fx:id="actor_info" mnemonicParsing="false" onAction="#menuPrintActorInfo" prefHeight="25.0" prefWidth="115.0" text="Actor Info" />
@@ -77,18 +77,18 @@
                 </ScrollPane>
                 <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="353.0" prefWidth="179.0">
                     <items>
-                        <ScrollPane hbarPolicy="ALWAYS" prefHeight="173.0" prefWidth="177.0" vbarPolicy="ALWAYS">
+                        <ScrollPane hbarPolicy="ALWAYS" prefHeight="173.0" prefWidth="168.0" vbarPolicy="ALWAYS">
                             <content>
-                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="174.0" prefWidth="167.0">
+                                <AnchorPane>
                                     <children>
                                         <Label fx:id="unpaired_label" />
                                     </children>
                                 </AnchorPane>
                             </content>
                         </ScrollPane>
-                        <ScrollPane hbarPolicy="ALWAYS" prefHeight="167.0" prefWidth="177.0" vbarPolicy="ALWAYS">
+                        <ScrollPane hbarPolicy="ALWAYS" prefHeight="245.0" prefWidth="283.0" vbarPolicy="ALWAYS">
                             <content>
-                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="174.0" prefWidth="166.0">
+                                <AnchorPane>
                                     <children>
                                         <Label fx:id="actors_label" />
                                     </children>
