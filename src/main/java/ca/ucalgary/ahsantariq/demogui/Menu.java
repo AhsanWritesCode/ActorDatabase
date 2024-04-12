@@ -595,9 +595,7 @@ public class Menu {
         ArrayList<Actor> ActorsInCountryDescendingList = data.getActorsInCountryDescendingList();
 
         // Prints the countries in order of most to least actors
-        for (Map.Entry<String, Integer> entry : data.getActorsPerCountryDescending().entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue() + " actors");
-        }
+
     }
 
     /**

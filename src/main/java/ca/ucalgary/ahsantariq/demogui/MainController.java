@@ -250,6 +250,29 @@ public class MainController {
         alert.setContentText(s);
         alert.showAndWait();
     }
+    @FXML
+    void menuTallestActor() {
+        // Get all actors from the data
+        ArrayList<Actor> actors = data.getAllActors();
+        int maxHeight = Integer.MIN_VALUE;
+        String tallestActorName = "";
+        // Iterate through all actors to find the tallest actor
+        for (Actor actor : actors) {
+            int height = actor.getHeight();
+            if (height > maxHeight) {
+                maxHeight = height;
+                tallestActorName = actor.getName();
+            }
+        }
+        // Display the tallest actor
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Tallest Actor");
+        System.out.printf("The tallest actor in the database is %s with a height of %d cm%n", tallestActorName, maxHeight);
+        String s = "The tallest actor in the database is " + tallestActorName +  " with a height of " + maxHeight + " cm!";
+        alert.setHeaderText("Tallest actor in the data base");
+        alert.setContentText(s);
+        alert.showAndWait();
+    }
 
     @FXML
     void retire(ActionEvent event) {
