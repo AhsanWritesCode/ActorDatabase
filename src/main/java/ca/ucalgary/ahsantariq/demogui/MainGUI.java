@@ -8,9 +8,18 @@ import javafx.stage.Stage;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * MainGUI class represents the entry point for the JavaFX application.
+ */
+
 public class MainGUI extends Application {
     private static File file = null;
 
+    /**
+     * The main method of the application.
+     *
+     * @param args Command line arguments. Expects one optional argument for filename to load from.
+     */
     public static void main(String[] args) {
         // Check if command line arguments are provided
         if (args.length > 2) {
@@ -38,6 +47,12 @@ public class MainGUI extends Application {
         }
     }
 
+    /**
+     * The start method of the JavaFX application.
+     *
+     * @param stage The primary stage for this application.
+     * @throws IOException If an error occurs while loading the FXML file.
+     */
     @Override
     public void start(Stage stage) throws IOException {
         // Create an FXMLLoader object to load the FXML file
