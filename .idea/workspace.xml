@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="moved jar location">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-GUI.jar" beforeDir="false" afterPath="$PROJECT_DIR$/demo-GUI.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" afterDir="false" />
+    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="Added country stats button and view">
       <change beforePath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/ahsantariq/demogui/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/ahsantariq/demogui/main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,14 +106,6 @@
       <workItem from="1712563293476" duration="1012000" />
       <workItem from="1712607333483" duration="2575000" />
       <workItem from="1712727279599" duration="1566000" />
-    </task>
-    <task id="LOCAL-00010" summary="moved files from previous project to new gui project">
-      <option name="closed" value="true" />
-      <created>1712175706757</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1712175706757</updated>
     </task>
     <task id="LOCAL-00011" summary="Titles added for MainGUI.java">
       <option name="closed" value="true" />
@@ -502,14 +491,21 @@
       <option name="project" value="LOCAL" />
       <updated>1712875845403</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Added country stats button and view">
+      <option name="closed" value="true" />
+      <created>1712904016646</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1712904016646</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed outlook for alert pop-up" />
     <MESSAGE value="progressed on maincontroller. added status_label to main.fxml" />
     <MESSAGE value="progressed on maincontroller. added printactors/viewactors" />
     <MESSAGE value="progressed on maincontroller. viewactors" />
@@ -534,7 +530,8 @@
     <MESSAGE value="added jar file" />
     <MESSAGE value="changed maingui loading" />
     <MESSAGE value="moved jar location" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved jar location" />
+    <MESSAGE value="Added country stats button and view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added country stats button and view" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
