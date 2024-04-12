@@ -40,7 +40,7 @@ public class FileSaver {
                 // pairs always contain 2 people
                 fw.write(String.format("%s,%s\n",
                         pair.getImdbLink1(),
-                        pair.getImdbLink1()));
+                        pair.getImdbLink2()));
             }
 
 // Flush the writer again to ensure data is written to the file

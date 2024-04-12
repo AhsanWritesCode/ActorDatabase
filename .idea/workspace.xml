@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="Added error checking for adding same imdblink to pair">
+    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="Can add actors with 0 awards">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-GUI.jar" beforeDir="false" afterPath="$PROJECT_DIR$/demo-GUI.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/AddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/AddController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,14 +108,6 @@
       <workItem from="1712563293476" duration="1012000" />
       <workItem from="1712607333483" duration="2575000" />
       <workItem from="1712727279599" duration="1566000" />
-    </task>
-    <task id="LOCAL-00020" summary="created on action method for exit on MainController.java">
-      <option name="closed" value="true" />
-      <created>1712726661708</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1712726661708</updated>
     </task>
     <task id="LOCAL-00021" summary="MainController.java">
       <option name="closed" value="true" />
@@ -501,14 +493,21 @@
       <option name="project" value="LOCAL" />
       <updated>1712945584619</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Can add actors with 0 awards">
+      <option name="closed" value="true" />
+      <created>1712946701676</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1712946701676</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changed wording for retirement" />
     <MESSAGE value="Updated actor and pair display in GUI" />
     <MESSAGE value="Fixed GUI spacing" />
     <MESSAGE value="Edited GUI setup" />
@@ -533,7 +532,8 @@
     <MESSAGE value="changed to monospaced fonts for view panes" />
     <MESSAGE value="Updating" />
     <MESSAGE value="Added error checking for adding same imdblink to pair" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added error checking for adding same imdblink to pair" />
+    <MESSAGE value="Can add actors with 0 awards" />
+    <option name="LAST_COMMIT_MESSAGE" value="Can add actors with 0 awards" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
