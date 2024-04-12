@@ -424,7 +424,10 @@ public class Menu {
                 System.out.printf("Actor associated with link %s is already in a pair!%n", imdbLink1);
             } else if (data.checkInPair(imdbLink2)) {
                 System.out.printf("Actor associated with link %s is already in a pair!%n", imdbLink2);
-            } else {
+            } else if (imdbLink1 == imdbLink2) {
+                System.out.printf("Actors cannot be in a co-star pair with themselves!");
+            }
+            else {
                 // If both actors are not in a pair, store the new co-star pair
                 boolean success = data.storeNewCoStarPair(imdbLink1, imdbLink2);
                 // Provide feedback based on the success of storing the pair

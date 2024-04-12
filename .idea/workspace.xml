@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="Added country stats button and view">
-      <change beforePath="$PROJECT_DIR$/demo-GUI.jar" beforeDir="false" afterPath="$PROJECT_DIR$/demo-GUI.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/ahsantariq/demogui/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ca/ucalgary/ahsantariq/demogui/main.fxml" afterDir="false" />
+    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="fixed scroll pane issue">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,14 +108,6 @@
       <workItem from="1712563293476" duration="1012000" />
       <workItem from="1712607333483" duration="2575000" />
       <workItem from="1712727279599" duration="1566000" />
-    </task>
-    <task id="LOCAL-00011" summary="Titles added for MainGUI.java">
-      <option name="closed" value="true" />
-      <created>1712725531025</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1712725531025</updated>
     </task>
     <task id="LOCAL-00012" summary="Adding Button fx:id's to MainController.java">
       <option name="closed" value="true" />
@@ -500,14 +493,21 @@
       <option name="project" value="LOCAL" />
       <updated>1712904016646</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="fixed scroll pane issue">
+      <option name="closed" value="true" />
+      <created>1712904885552</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1712904885552</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="progressed on maincontroller. added status_label to main.fxml" />
     <MESSAGE value="progressed on maincontroller. added printactors/viewactors" />
     <MESSAGE value="progressed on maincontroller. viewactors" />
     <MESSAGE value="progressed on maincontroller. viewcostarpairs" />
@@ -532,7 +532,8 @@
     <MESSAGE value="changed maingui loading" />
     <MESSAGE value="moved jar location" />
     <MESSAGE value="Added country stats button and view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added country stats button and view" />
+    <MESSAGE value="fixed scroll pane issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed scroll pane issue" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

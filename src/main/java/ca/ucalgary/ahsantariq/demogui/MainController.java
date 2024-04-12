@@ -319,11 +319,11 @@ public class MainController {
         status_label.setText("");
         String id1 = costar_id1.getText();
         String id2 = costar_id2.getText();
-        if (!data.checkInPair(id1)) {
+        if (data.checkInPair(id1)) {
             status_label.setTextFill(Color.RED);
             status_label.setText(String.format("Actor 1 is already in a co-star pair!"));
 
-        } else if (!data.checkInPair(id2)) {
+        } else if (data.checkInPair(id2)) {
             status_label.setTextFill(Color.RED);
             status_label.setText(String.format("Actor 2 is already in a co-star pair!"));
         } else {
