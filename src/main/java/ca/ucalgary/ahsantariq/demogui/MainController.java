@@ -453,6 +453,9 @@ public class MainController {
         if (id1 == id2){
             status_label.setTextFill(Color.RED); // Set text color to red
             status_label.setText(String.format("Actor's cannot be paired with themselves!")); // Set error message
+        } else if (id1.isEmpty() || id2.isEmpty()) {
+            status_label.setTextFill(Color.RED); // Set text color to red
+            status_label.setText(String.format("Enter 2 different Imdb links!")); // Set error message
         }
         else if (data.checkInPair(id1)) {
             // If actor 1 is already in a pair, update status label with error message
