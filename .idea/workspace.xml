@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="added error checking for if an actor is added to a costar pair with themselves">
+    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="committing files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-GUI.jar" beforeDir="false" afterPath="$PROJECT_DIR$/demo-GUI.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,14 +109,6 @@
       <workItem from="1712563293476" duration="1012000" />
       <workItem from="1712607333483" duration="2575000" />
       <workItem from="1712727279599" duration="1566000" />
-    </task>
-    <task id="LOCAL-00014" summary="Added on action method storeNewCoStarPair for create co star pair button">
-      <option name="closed" value="true" />
-      <created>1712726106142</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1712726106142</updated>
     </task>
     <task id="LOCAL-00015" summary="Added on action method splitPair for create split co star pair button and added MainController as controller">
       <option name="closed" value="true" />
@@ -500,14 +494,21 @@
       <option name="project" value="LOCAL" />
       <updated>1712905519249</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="committing files">
+      <option name="closed" value="true" />
+      <created>1712905772244</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1712905772244</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="progressed on maincontroller. viewactors" />
     <MESSAGE value="progressed on maincontroller. viewcostarpairs" />
     <MESSAGE value="progressed on maincontroller. save" />
     <MESSAGE value="progressed on maincontroller. splitPair" />
@@ -532,7 +533,8 @@
     <MESSAGE value="Added country stats button and view" />
     <MESSAGE value="fixed scroll pane issue" />
     <MESSAGE value="added error checking for if an actor is added to a costar pair with themselves" />
-    <option name="LAST_COMMIT_MESSAGE" value="added error checking for if an actor is added to a costar pair with themselves" />
+    <MESSAGE value="committing files" />
+    <option name="LAST_COMMIT_MESSAGE" value="committing files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

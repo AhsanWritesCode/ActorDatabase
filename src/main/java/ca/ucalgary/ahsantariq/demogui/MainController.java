@@ -24,13 +24,13 @@ import java.util.Map;
 public class MainController {
 
     // Format string for displaying actor information
-    private static final String ACTOR_FORMAT = "%-20s\t%-3s\t%-6s\t%-30s\t%-11s\t%-36s\t%-7s%n";
+    private static final String ACTOR_FORMAT = "%-40s\t%-40s\t%-40s\t%-40s\t%-40s\t%-40s\t%-40s%n";
     // Header for displaying actor information
     private static final String ACTOR_HEADER = String.format(ACTOR_FORMAT, "NAME", "AGE", "HEIGHT", "COUNTRY", "# OF AWARDS", "IMDB LINK", "RETIRED");
     // Format string for displaying actor pairs
-    private static final String PAIR_FORMAT = "%-32s %-33s%n";
+    private static final String PAIR_FORMAT = "%-40s %-40s%n";
     // Header for displaying actor pairs
-    private static final String PAIR_HEADER = String.format(PAIR_FORMAT, "IMDBLINK1", "IMDBLINK2");
+    private static final String PAIR_HEADER = String.format(PAIR_FORMAT, "IMDBLINK1", "\t\t\t  IMDBLINK2");
     private static Data data = new Data();
     // Separator string for formatting purposes
     private static String ACTOR_SEPARATOR = "";

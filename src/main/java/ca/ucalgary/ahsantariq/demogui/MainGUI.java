@@ -33,6 +33,9 @@ public class MainGUI extends Application {
             // If the file exists and is readable, call the menuLoop method from the Menu class with the file
             launch();
         }
+        else {
+            launch();
+        }
     }
 
     @Override
