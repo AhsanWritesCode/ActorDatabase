@@ -13,6 +13,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -30,7 +31,7 @@ public class MainController {
     // Format string for displaying actor pairs
     private static final String PAIR_FORMAT = "%-40s %-40s%n";
     // Header for displaying actor pairs
-    private static final String PAIR_HEADER = String.format(PAIR_FORMAT, "IMDBLINK1", "\t\t\t  IMDBLINK2");
+    private static final String PAIR_HEADER = String.format(PAIR_FORMAT, "IMDBLINK1", "IMDBLINK2");
     private static Data data = new Data();
     // Separator string for formatting purposes
     private static String ACTOR_SEPARATOR = "";
@@ -131,6 +132,7 @@ public class MainController {
         actors.sort(new ActorNameImdbLinkComparator());
         String s = viewActors(actors);
         actors_label.setText(s);
+        actors_label.setFont(new Font("Courier New", 10));
     }
 
     public void viewUnpaired() {
@@ -139,6 +141,7 @@ public class MainController {
         actors.sort(new ActorNameImdbLinkComparator());
         String s = viewActors(actors);
         unpaired_label.setText(s);
+        unpaired_label.setFont(new Font("Courier New", 10));
     }
 
     public void viewCoStarPairs() {
@@ -157,6 +160,7 @@ public class MainController {
             }
         }
         costars_label.setText(sb.toString());
+        costars_label.setFont(new Font("Courier New", 10));
     }
 
     private String viewActors(ArrayList<Actor> actors) {
