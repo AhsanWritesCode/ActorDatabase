@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="gui now launches with no arguments">
+    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="fixed splitcostairpair">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/AddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/AddController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,14 +107,6 @@
       <workItem from="1712563293476" duration="1012000" />
       <workItem from="1712607333483" duration="2575000" />
       <workItem from="1712727279599" duration="1566000" />
-    </task>
-    <task id="LOCAL-00016" summary="created on action method for storeNewActor on MainController.java">
-      <option name="closed" value="true" />
-      <created>1712726425220</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1712726425220</updated>
     </task>
     <task id="LOCAL-00017" summary="on action method for load created on MainController.java">
       <option name="closed" value="true" />
@@ -500,14 +492,21 @@
       <option name="project" value="LOCAL" />
       <updated>1712907175848</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="fixed splitcostairpair">
+      <option name="closed" value="true" />
+      <created>1712907595713</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1712907595713</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="progressed on maincontroller. save" />
     <MESSAGE value="progressed on maincontroller. splitPair" />
     <MESSAGE value="fixed equals method for Pair.java" />
     <MESSAGE value="Added retiring to actors" />
@@ -532,7 +531,8 @@
     <MESSAGE value="added error checking for if an actor is added to a costar pair with themselves" />
     <MESSAGE value="committing files" />
     <MESSAGE value="gui now launches with no arguments" />
-    <option name="LAST_COMMIT_MESSAGE" value="gui now launches with no arguments" />
+    <MESSAGE value="fixed splitcostairpair" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed splitcostairpair" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

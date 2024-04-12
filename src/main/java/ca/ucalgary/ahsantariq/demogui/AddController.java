@@ -144,6 +144,21 @@ public class AddController {
 
             about.showAndWait();
         }
+        else if (data.actorExists(imdbLink)) {
+            Alert about = new Alert(Alert.AlertType.ERROR);
+            about.setTitle("Actor Already Exists");
+            about.setHeaderText("Message");
+            about.setContentText("An actor with this IMDB Link is already in the database!");
+
+            // Set light red style directly
+            DialogPane dialogPane = about.getDialogPane();
+            dialogPane.setStyle("-fx-background-color: #FF7F7F; " // Light blue background
+                    + "-fx-font-family: Arial; " // Arial font family
+                    + "-fx-font-size: 14px; " // Font size
+                    + "-fx-text-fill: #000000;"); // Black text color
+
+            about.showAndWait();
+        }
         if (!name.isEmpty() && age != 0 && height != 0 && !country.isEmpty() && awardsWon != 0 && !imdbLink.isEmpty()) {
             data.storeNewActor(name, age, height, country, awardsWon, imdbLink);
         }
