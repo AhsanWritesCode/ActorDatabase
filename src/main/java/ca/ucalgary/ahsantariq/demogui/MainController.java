@@ -363,7 +363,13 @@ public class MainController {
             // If the actor is in a pair, update status label with error message
             status_label.setTextFill(Color.RED); // Set text color to red
             status_label.setText(String.format("Actor is in a co-star pair so they can't retire until their pair is separated!")); // Set error message
-        } else {
+        }
+        else if (!data.actorExists(id1)) {
+            // If the actor is in a pair, update status label with error message
+            status_label.setTextFill(Color.RED); // Set text color to red
+            status_label.setText(String.format("This actor does not exist!")); // Set error message
+        }
+        else {
             // If the actor can be retired
             status_label.setTextFill(Color.GREEN); // Set text color to green
             status_label.setText(String.format("Actor has been retired")); // Set success message
