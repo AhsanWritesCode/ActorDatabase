@@ -254,34 +254,57 @@ public class MainController {
 
     @FXML
     void menuPrintActorInfo(ActionEvent event) {
+        // Create an alert dialog for displaying actor information
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Actor Info");
-        // should this be the text field instead of the button?
+        alert.setTitle("Actor Info"); // Set dialog title
+
+        // Retrieve actor information based on input
         Actor actor = data.getActor(info_id1.getText());
+
+        // Set dialog header text to include actor's IMDb link
         alert.setHeaderText("Actor: " + actor.getImdbLink());
-        alert.setContentText(String.format("Name: %s%nImdb Link: %s%nAge: %s%nHeight: %s%nCountry: %s%nAwards Won: %s%n", actor.getName(), actor.getImdbLink(), actor.getAge(), actor.getHeight(), actor.getCountry(), actor.getNumberOfAwards()));
+
+        // Construct content text with actor's details
+        alert.setContentText(String.format("Name: %s%nImdb Link: %s%nAge: %s%nHeight: %s%nCountry: %s%nAwards Won: %s%n",
+                actor.getName(), actor.getImdbLink(), actor.getAge(), actor.getHeight(), actor.getCountry(), actor.getNumberOfAwards()));
+
+        // Show the alert dialog and wait for user interaction
         alert.showAndWait();
     }
 
+
     @FXML
     void menuCountryStats(ActionEvent event) {
+        // Create an alert dialog for displaying country statistics
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Country Stats");
-        ArrayList<Actor> ActorsInCountryDescendingList = data.getActorsInCountryDescendingList();
+        alert.setTitle("Country Stats"); // Set dialog title
+
+        // Retrieve list of actors in descending order of country count
+        ArrayList<Actor> actorsInCountryDescendingList = data.getActorsInCountryDescendingList();
+
+        // Construct content text with country statistics
         String s = "";
         for (Map.Entry<String, Integer> entry : data.getActorsPerCountryDescending().entrySet()) {
             s += (entry.getKey() + ": " + entry.getValue() + " actors\n");
         }
+
+        // Set dialog header text to describe the content
         alert.setHeaderText("Actors per country in ascending order");
+
+        // Set the content of the alert dialog to display the country statistics
         alert.setContentText(s);
+
+        // Show the alert dialog and wait for user interaction
         alert.showAndWait();
     }
+
     @FXML
     void menuTallestActor() {
         // Get all actors from the data
         ArrayList<Actor> actors = data.getAllActors();
         int maxHeight = Integer.MIN_VALUE;
         String tallestActorName = "";
+
         // Iterate through all actors to find the tallest actor
         for (Actor actor : actors) {
             int height = actor.getHeight();
@@ -290,15 +313,19 @@ public class MainController {
                 tallestActorName = actor.getName();
             }
         }
+
         // Display the tallest actor
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Tallest Actor");
-        System.out.printf("The tallest actor in the database is %s with a height of %d cm%n", tallestActorName, maxHeight);
+        alert.setTitle("Tallest Actor"); // Set dialog title
+        // Set dialog header text to describe the content
+        alert.setHeaderText("Tallest actor in the database");
+        // Construct content text with information about the tallest actor
         String s = "The tallest actor in the database is " + tallestActorName +  " with a height of " + maxHeight + " cm!";
-        alert.setHeaderText("Tallest actor in the data base");
         alert.setContentText(s);
+        // Show the alert dialog and wait for user interaction
         alert.showAndWait();
     }
+
 
     @FXML
     void retire(ActionEvent event) {
