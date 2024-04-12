@@ -384,27 +384,39 @@ public class MainController {
         status_label.setText(""); // Clear any previous text
 
         // Get the IDs of the actors to split
-        String id1 = sep_id1.getText();
-        String id2 = sep_id2.getText();
+        String imdbLink1 = sep_id1.getText();
+        String imdbLink2 = sep_id2.getText();
 
-        // Check if actor 1 is in a co-star pair
-        if (!data.checkInPair(id1)) {
-            // If actor 1 is not in a pair, update status label with error message
-            status_label.setTextFill(Color.RED); // Set text color to red
-            status_label.setText(String.format("Actor 1 is not in a co-star pair!")); // Set error message
-        } else if (!data.checkInPair(id2)) {
-            // If actor 2 is not in a pair, update status label with error message
-            status_label.setTextFill(Color.RED); // Set text color to red
-            status_label.setText(String.format("Actor 2 is not in a co-star pair!")); // Set error message
-        } else if (!data.getPair(id1).equals(data.getPair(id2))) {
-            // If actors are not in the same pair, update status label with error message
-            status_label.setTextFill(Color.RED); // Set text color to red
-            status_label.setText(String.format("These actors are not in the same co-star pair!")); // Set error message
+        // Check if both actors exist in the database
+        if (data.actorExists(imdbLink1) && data.actorExists(imdbLink2)) {
+            // Get the pair associated with the first actor's IMDb link
+            Pair pair = data.getPair(imdbLink1);
+            if (pair instanceof ActorPair actorPair) {
+                String p1 = actorPair.getImdbLink1();
+                String p2 = actorPair.getImdbLink1();
+
+                // Check if the provided actors are paired together
+                if (Objects.equals(imdbLink1, p1) && !Objects.equals(imdbLink2, p2)) {
+                    String s = ("Both actors are not in a pair together!");
+                    status_label.setTextFill(Color.RED);
+                    status_label.setText(s);
+                } else if (Objects.equals(imdbLink1, p2) && !Objects.equals(imdbLink2, p1)) {
+                    String s = ("Both actors are not in a pair together!");
+                    status_label.setTextFill(Color.RED);
+                    status_label.setText(s);
+                } else {
+                    // If the actors are paired together, split the pair
+                    data.splitPair(imdbLink1, imdbLink2);
+                    String s = ("Co-star pair successfully split!");
+                    status_label.setTextFill(Color.GREEN);
+                    status_label.setText(s);
+                }
+            }
         } else {
-            // If actors are in the same pair, split the pair and update status label with success message
-            status_label.setTextFill(Color.GREEN); // Set text color to green
-            status_label.setText(String.format("Actor 1 and 2 are separated!")); // Set success message
-            data.splitPair(id1, id2); // Split the pair
+            // If either actor does not exist, display an error message
+            String s = ("One or both of the actors do not exist in the data base!");
+            status_label.setTextFill(Color.RED);
+            status_label.setText(s);
         }
 
         // Update views after splitting pair
@@ -472,7 +484,7 @@ public class MainController {
                 // Provide feedback based on the success of storing the pair
                 if (success) {
                     String s = ("Success");
-                    status_label.setTextFill(Color.RED);
+                    status_label.setTextFill(Color.GREEN);
                     status_label.setText(s);
                 } else {
                     String s = ("Failed");
