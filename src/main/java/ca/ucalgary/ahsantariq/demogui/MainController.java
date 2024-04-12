@@ -376,7 +376,7 @@ public class MainController {
         String id1 = retire_id1.getText();
 
         // Check if the actor is in a co-star pair
-        if (!data.checkInPair(id1)) {
+        if (data.checkInPair(id1)) {
             // If the actor is in a pair, update status label with error message
             status_label.setTextFill(Color.RED); // Set text color to red
             status_label.setText(String.format("Actor is in a co-star pair so they can't retire until their pair is separated!")); // Set error message
