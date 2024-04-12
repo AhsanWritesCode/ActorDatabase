@@ -39,11 +39,11 @@
     <left>
         <VBox prefWidth="130.0" BorderPane.alignment="CENTER">
             <children>
-                <TextField fx:id="costar_id1" prefWidth="130.0" />
-                <TextField fx:id="costar_id2" prefWidth="130.0" />
+                <TextField fx:id="costar_id1" prefWidth="130.0" promptText="Actor 1" />
+                <TextField fx:id="costar_id2" prefWidth="130.0" promptText="Actor 2" />
                 <Button fx:id="createCoStarButton" mnemonicParsing="false" onAction="#storeNewCoStarPair" prefHeight="25.0" prefWidth="130.0" text="Create Co-Star Pair" />
-                <TextField fx:id="sep_id1" prefWidth="130.0" />
-                <TextField fx:id="sep_id2" prefWidth="130.0" />
+                <TextField fx:id="sep_id2" prefWidth="130.0" promptText="Actor 1" />
+                <TextField fx:id="sep_id1" prefWidth="130.0" promptText="Actor 2" />
                 <Button fx:id="splitCoStarPair" mnemonicParsing="false" onAction="#splitPair" prefWidth="130.0" text="Split Co-Star Pair" />
                 <TextField fx:id="retire_id1" prefWidth="130.0" />
                 <Button mnemonicParsing="false" onAction="#retire" prefWidth="130.0" text="Retire Actor" />
