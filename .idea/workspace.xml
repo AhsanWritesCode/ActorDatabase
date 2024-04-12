@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="Can add actors with 0 awards">
+    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="added error checking for adding pair">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-GUI.jar" beforeDir="false" afterPath="$PROJECT_DIR$/demo-GUI.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,22 +108,6 @@
       <workItem from="1712563293476" duration="1012000" />
       <workItem from="1712607333483" duration="2575000" />
       <workItem from="1712727279599" duration="1566000" />
-    </task>
-    <task id="LOCAL-00021" summary="MainController.java">
-      <option name="closed" value="true" />
-      <created>1712726685934</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1712726685934</updated>
-    </task>
-    <task id="LOCAL-00022" summary="new on action method for about created on MainController.java">
-      <option name="closed" value="true" />
-      <created>1712726770699</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1712726770699</updated>
     </task>
     <task id="LOCAL-00023" summary="retire - on action method created on MainController.java">
       <option name="closed" value="true" />
@@ -501,15 +485,29 @@
       <option name="project" value="LOCAL" />
       <updated>1712946701676</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Fixed bug in file saver">
+      <option name="closed" value="true" />
+      <created>1712947382112</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1712947382112</updated>
+    </task>
+    <task id="LOCAL-00071" summary="added error checking for adding pair">
+      <option name="closed" value="true" />
+      <created>1712947596249</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1712947596249</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated actor and pair display in GUI" />
-    <MESSAGE value="Fixed GUI spacing" />
     <MESSAGE value="Edited GUI setup" />
     <MESSAGE value="Fixed GUI spacing (again)" />
     <MESSAGE value="Added actor info alert" />
@@ -533,7 +531,9 @@
     <MESSAGE value="Updating" />
     <MESSAGE value="Added error checking for adding same imdblink to pair" />
     <MESSAGE value="Can add actors with 0 awards" />
-    <option name="LAST_COMMIT_MESSAGE" value="Can add actors with 0 awards" />
+    <MESSAGE value="Fixed bug in file saver" />
+    <MESSAGE value="added error checking for adding pair" />
+    <option name="LAST_COMMIT_MESSAGE" value="added error checking for adding pair" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

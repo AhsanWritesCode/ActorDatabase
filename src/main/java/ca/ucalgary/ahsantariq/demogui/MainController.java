@@ -21,6 +21,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Map;
+import java.util.Objects;
 
 /**
  * MainController class manages the main functionalities of the GUI application.
@@ -446,30 +447,50 @@ public class MainController {
         status_label.setText(""); // Clear any previous text
 
         // Get the IDs of the actors for the new co-star pair
-        String id1 = costar_id1.getText();
-        String id2 = costar_id2.getText();
+        String imdbLink1 = costar_id1.getText();
+        String imdbLink2 = costar_id2.getText();
 
         // Check if actor 1 is already in a co-star pair
-        if (id1 == id2){
-            status_label.setTextFill(Color.RED); // Set text color to red
-            status_label.setText(String.format("Actor's cannot be paired with themselves!")); // Set error message
-        } else if (id1.isEmpty() || id2.isEmpty()) {
-            status_label.setTextFill(Color.RED); // Set text color to red
-            status_label.setText(String.format("Enter 2 different Imdb links!")); // Set error message
-        }
-        else if (data.checkInPair(id1)) {
-            // If actor 1 is already in a pair, update status label with error message
-            status_label.setTextFill(Color.RED); // Set text color to red
-            status_label.setText(String.format("Actor 1 is already in a co-star pair!")); // Set error message
-        } else if (data.checkInPair(id2)) {
-            // If actor 2 is already in a pair, update status label with error message
-            status_label.setTextFill(Color.RED); // Set text color to red
-            status_label.setText(String.format("Actor 2 is already in a co-star pair!")); // Set error message
+        if (data.actorExists(imdbLink1) && data.actorExists(imdbLink2)) {
+            // Check if either actor is already in a pair
+            if (data.checkInPair(imdbLink1)) {
+                String s = ("Actor associated with link 1 is already in a pair!");
+                status_label.setTextFill(Color.RED);
+                status_label.setText(s);
+            } else if (data.checkInPair(imdbLink2)) {
+                String s = ("Actor associated with link 2 is already in a pair!");
+                status_label.setTextFill(Color.RED);
+                status_label.setText(s);
+            } else if (Objects.equals(imdbLink1, imdbLink2)) {
+                String s = ("Actors cannot be in a co-star pair with themselves!");
+                status_label.setTextFill(Color.RED);
+                status_label.setText(s);
+            }
+            else {
+                // If both actors are not in a pair, store the new co-star pair
+                boolean success = data.storeNewCoStarPair(imdbLink1, imdbLink2);
+                // Provide feedback based on the success of storing the pair
+                if (success) {
+                    String s = ("Success");
+                    status_label.setTextFill(Color.RED);
+                    status_label.setText(s);
+                } else {
+                    String s = ("Failed");
+                    status_label.setTextFill(Color.RED);
+                    status_label.setText(s);
+                }
+            }
         } else {
-            // If actors are not in pairs, create a new co-star pair and update status label with success message
-            status_label.setTextFill(Color.GREEN); // Set text color to green
-            status_label.setText(String.format("Actor 1 and 2 are now in a co-star pair!")); // Set success message
-            data.storeNewCoStarPair(id1, id2); // Store new co-star pair
+            if (imdbLink1.isEmpty() || imdbLink2.isEmpty()){
+                String s = ("Enter 2 Imdb links");
+                status_label.setTextFill(Color.RED);
+                status_label.setText(s);
+            } else {
+            // If either actor does not exist, display an error message
+            String s = ("Both actors do not exist in the database!");
+            status_label.setTextFill(Color.RED);
+            status_label.setText(s);
+            }
         }
 
         // Update views after storing new co-star pair
