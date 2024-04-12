@@ -57,6 +57,7 @@
                 <Button fx:id="actor_info" mnemonicParsing="false" onAction="#menuPrintActorInfo" prefHeight="25.0" prefWidth="115.0" text="Actor Info" />
                 <Button mnemonicParsing="false" onAction="#menuActorStatistics" prefHeight="25.0" prefWidth="115.0" text="Actor Stats" />
             <Button mnemonicParsing="false" onAction="#menuCountryStats" prefHeight="26.0" prefWidth="138.0" text="Country Stats" />
+            <Button mnemonicParsing="false" onAction="#menuTallestActor" prefHeight="26.0" prefWidth="148.0" text="Tallest Actor" />
             </children>
         </VBox>
     </right>

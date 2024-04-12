@@ -507,6 +507,7 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="progressed on maincontroller. save" />
     <MESSAGE value="progressed on maincontroller. splitPair" />
     <MESSAGE value="fixed equals method for Pair.java" />
     <MESSAGE value="Added retiring to actors" />
