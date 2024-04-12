@@ -450,7 +450,11 @@ public class MainController {
         String id2 = costar_id2.getText();
 
         // Check if actor 1 is already in a co-star pair
-        if (data.checkInPair(id1)) {
+        if (id1 == id2){
+            status_label.setTextFill(Color.RED); // Set text color to red
+            status_label.setText(String.format("Actor's cannot be paired with themselves!")); // Set error message
+        }
+        else if (data.checkInPair(id1)) {
             // If actor 1 is already in a pair, update status label with error message
             status_label.setTextFill(Color.RED); // Set text color to red
             status_label.setText(String.format("Actor 1 is already in a co-star pair!")); // Set error message

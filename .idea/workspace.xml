@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="Updating" />
+    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="Updating">
+      <change beforePath="$PROJECT_DIR$/demo-GUI.jar" beforeDir="false" afterPath="$PROJECT_DIR$/demo-GUI.jar" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,7 +82,6 @@
     <configuration name="MainGUI" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="ca.ucalgary.ahsantariq.demogui.MainGUI" />
       <module name="demo-GUI" />
-      <option name="PROGRAM_PARAMETERS" value="data.csv" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
