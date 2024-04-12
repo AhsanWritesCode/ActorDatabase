@@ -22,6 +22,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Map;
 
+/**
+ * MainController class manages the main functionalities of the GUI application.
+ */
 public class MainController {
 
     // Format string for displaying actor information
@@ -87,6 +90,11 @@ public class MainController {
     @FXML
     private Label status_label;
 
+    /**
+     * Displays the "About" dialog.
+     *
+     * @param event The action event triggered by the "About" menu item.
+     */
     @FXML
     void about(ActionEvent event) {
         Alert about = new Alert(Alert.AlertType.INFORMATION);
@@ -107,12 +115,22 @@ public class MainController {
         about.showAndWait();
     }
 
+    /**
+     * Exits the application.
+     *
+     * @param event The action event triggered by the "Exit" menu item.
+     */
     @FXML
     void exit(ActionEvent event) {
         Platform.exit();
     }
 
 
+    /**
+     * Loads data from a file.
+     *
+     * @param event The action event triggered by the "Load" menu item.
+     */
     @FXML
     void load(ActionEvent event) {
         FileChooser fc = new FileChooser();
@@ -126,6 +144,9 @@ public class MainController {
         viewUnpaired();
     }
 
+    /**
+     * Updates the actors view.
+     */
     public void viewActors() {
         // Retrieve and print information about all actors from the data
         ArrayList<Actor> actors = data.getAllActors();
