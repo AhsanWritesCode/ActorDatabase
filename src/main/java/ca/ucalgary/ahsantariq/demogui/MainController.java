@@ -320,7 +320,7 @@ public class MainController {
         // Set dialog header text to describe the content
         alert.setHeaderText("Tallest actor in the database");
         // Construct content text with information about the tallest actor
-        String s = "The tallest actor in the database is " + tallestActorName +  " with a height of " + maxHeight + " cm!";
+        String s = "The tallest actor in the database is " + tallestActorName + " with a height of " + maxHeight + " cm!";
         alert.setContentText(s);
         // Show the alert dialog and wait for user interaction
         alert.showAndWait();
@@ -357,68 +357,96 @@ public class MainController {
 
     @FXML
     void splitPair(ActionEvent event) {
-        status_label.setTextFill(Color.BLACK);
-        status_label.setText("");
+        // Reset status label appearance and text
+        status_label.setTextFill(Color.BLACK); // Set text color to black
+        status_label.setText(""); // Clear any previous text
+
+        // Get the IDs of the actors to split
         String id1 = sep_id1.getText();
         String id2 = sep_id2.getText();
-        if (!data.checkInPair(id1)) {
-            status_label.setTextFill(Color.RED);
-            status_label.setText(String.format("Actor 1 is not in a co-star pair!"));
 
+        // Check if actor 1 is in a co-star pair
+        if (!data.checkInPair(id1)) {
+            // If actor 1 is not in a pair, update status label with error message
+            status_label.setTextFill(Color.RED); // Set text color to red
+            status_label.setText(String.format("Actor 1 is not in a co-star pair!")); // Set error message
         } else if (!data.checkInPair(id2)) {
-            status_label.setTextFill(Color.RED);
-            status_label.setText(String.format("Actor 2 is not in a co-star pair!"));
+            // If actor 2 is not in a pair, update status label with error message
+            status_label.setTextFill(Color.RED); // Set text color to red
+            status_label.setText(String.format("Actor 2 is not in a co-star pair!")); // Set error message
         } else if (!data.getPair(id1).equals(data.getPair(id2))) {
-            status_label.setTextFill(Color.RED);
-            status_label.setText(String.format("These actors are not in the same co-star pair!"));
+            // If actors are not in the same pair, update status label with error message
+            status_label.setTextFill(Color.RED); // Set text color to red
+            status_label.setText(String.format("These actors are not in the same co-star pair!")); // Set error message
         } else {
-            status_label.setTextFill(Color.GREEN);
-            status_label.setText(String.format("Actor 1 and 2 are separated!"));
-            data.splitPair(id1, id2);
+            // If actors are in the same pair, split the pair and update status label with success message
+            status_label.setTextFill(Color.GREEN); // Set text color to green
+            status_label.setText(String.format("Actor 1 and 2 are separated!")); // Set success message
+            data.splitPair(id1, id2); // Split the pair
         }
-        viewActors();
-        viewCoStarPairs();
-        viewUnpaired();
+
+        // Update views after splitting pair
+        viewActors(); // Update actors view
+        viewCoStarPairs(); // Update co-star pairs view
+        viewUnpaired(); // Update unpaired view
     }
+
 
     @FXML
     void storeNewActor(ActionEvent event) {
+        // Load the FXML file for adding a new actor
         FXMLLoader fxmlLoader = new FXMLLoader(MainGUI.class.getResource("add.fxml"));
         Scene scene = null;
         try {
+            // Create a scene with the loaded FXML and set its dimensions
             scene = new Scene(fxmlLoader.load(), 400, 400);
         } catch (IOException e) {
+            // Throw a runtime exception if there is an error loading the FXML
             throw new RuntimeException(e);
         }
+
+        // Get the controller for the add.fxml file
         AddController cont = fxmlLoader.getController();
+        // Pass data and reference to this controller to the AddController
         cont.setData(data, this);
+
+        // Create a new stage for displaying the scene
         Stage stage = new Stage();
-        stage.setTitle("Add New Actor");
-        stage.setScene(scene);
-        stage.showAndWait();
+        stage.setTitle("Add New Actor"); // Set stage title
+        stage.setScene(scene); // Set the scene to the stage
+        stage.showAndWait(); // Display the stage and wait for it to be closed
     }
+
 
     @FXML
     void storeNewCoStarPair(ActionEvent event) {
-        status_label.setTextFill(Color.BLACK);
-        status_label.setText("");
+        // Reset status label appearance and text
+        status_label.setTextFill(Color.BLACK); // Set text color to black
+        status_label.setText(""); // Clear any previous text
+
+        // Get the IDs of the actors for the new co-star pair
         String id1 = costar_id1.getText();
         String id2 = costar_id2.getText();
+
+        // Check if actor 1 is already in a co-star pair
         if (data.checkInPair(id1)) {
-            status_label.setTextFill(Color.RED);
-            status_label.setText(String.format("Actor 1 is already in a co-star pair!"));
-
+            // If actor 1 is already in a pair, update status label with error message
+            status_label.setTextFill(Color.RED); // Set text color to red
+            status_label.setText(String.format("Actor 1 is already in a co-star pair!")); // Set error message
         } else if (data.checkInPair(id2)) {
-            status_label.setTextFill(Color.RED);
-            status_label.setText(String.format("Actor 2 is already in a co-star pair!"));
+            // If actor 2 is already in a pair, update status label with error message
+            status_label.setTextFill(Color.RED); // Set text color to red
+            status_label.setText(String.format("Actor 2 is already in a co-star pair!")); // Set error message
         } else {
-            status_label.setTextFill(Color.GREEN);
-            status_label.setText(String.format("Actor 1 and 2 are now in a co-star pair!"));
-            data.storeNewCoStarPair(id1, id2);
+            // If actors are not in pairs, create a new co-star pair and update status label with success message
+            status_label.setTextFill(Color.GREEN); // Set text color to green
+            status_label.setText(String.format("Actor 1 and 2 are now in a co-star pair!")); // Set success message
+            data.storeNewCoStarPair(id1, id2); // Store new co-star pair
         }
-        viewActors();
-        viewCoStarPairs();
-        viewUnpaired();
-    }
 
+        // Update views after storing new co-star pair
+        viewActors(); // Update actors view
+        viewCoStarPairs(); // Update co-star pairs view
+        viewUnpaired(); // Update unpaired view
+    }
 }
