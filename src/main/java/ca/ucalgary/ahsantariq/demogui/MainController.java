@@ -19,6 +19,7 @@ import javafx.stage.Stage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Map;
 
 public class MainController {
 
@@ -233,6 +234,20 @@ public class MainController {
         Actor actor = data.getActor(info_id1.getText());
         alert.setHeaderText("Actor: " + actor.getImdbLink());
         alert.setContentText(String.format("Name: %s%nImdb Link: %s%nAge: %s%nHeight: %s%nCountry: %s%nAwards Won: %s%n", actor.getName(), actor.getImdbLink(), actor.getAge(), actor.getHeight(), actor.getCountry(), actor.getNumberOfAwards()));
+        alert.showAndWait();
+    }
+
+    @FXML
+    void menuCountryStats(ActionEvent event) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Country Stats");
+        ArrayList<Actor> ActorsInCountryDescendingList = data.getActorsInCountryDescendingList();
+        String s = "";
+        for (Map.Entry<String, Integer> entry : data.getActorsPerCountryDescending().entrySet()) {
+            s += (entry.getKey() + ": " + entry.getValue() + " actors\n");
+        }
+        alert.setHeaderText("Actors per country in ascending order");
+        alert.setContentText(s);
         alert.showAndWait();
     }
 
