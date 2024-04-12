@@ -329,22 +329,31 @@ public class MainController {
 
     @FXML
     void retire(ActionEvent event) {
-        status_label.setTextFill(Color.BLACK);
-        status_label.setText("");
-        String id1 = retire_id1.getText();
-        if (!data.checkInPair(id1)) {
-            status_label.setTextFill(Color.RED);
-            status_label.setText(String.format("Actor is in a co-star pair so they can't retire until their pair is seperated!"));
+        // Reset status label appearance and text
+        status_label.setTextFill(Color.BLACK); // Set text color to black
+        status_label.setText(""); // Clear any previous text
 
+        // Get the ID of the actor to retire
+        String id1 = retire_id1.getText();
+
+        // Check if the actor is in a co-star pair
+        if (!data.checkInPair(id1)) {
+            // If the actor is in a pair, update status label with error message
+            status_label.setTextFill(Color.RED); // Set text color to red
+            status_label.setText(String.format("Actor is in a co-star pair so they can't retire until their pair is separated!")); // Set error message
         } else {
-            status_label.setTextFill(Color.GREEN);
-            status_label.setText(String.format("Actor has been retired"));
-            data.retire(id1);
+            // If the actor can be retired
+            status_label.setTextFill(Color.GREEN); // Set text color to green
+            status_label.setText(String.format("Actor has been retired")); // Set success message
+            data.retire(id1); // Retire the actor
         }
-        viewActors();
-        viewCoStarPairs();
-        viewUnpaired();
+
+        // Update views after retiring actor
+        viewActors(); // Update actors view
+        viewCoStarPairs(); // Update co-star pairs view
+        viewUnpaired(); // Update unpaired view
     }
+
 
     @FXML
     void splitPair(ActionEvent event) {
