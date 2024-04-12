@@ -6,25 +6,42 @@ import ca.ucalgary.ahsantariq.demogui.objects.ActorPair;
 import ca.ucalgary.ahsantariq.demogui.objects.Pair;
 import ca.ucalgary.ahsantariq.demogui.util.FileSaver;
 
+import java.io.File;
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.Objects;
 import java.util.Scanner;
-import java.util.*;
-import java.io.File;
+
 /**
  * This class represents a menu with various options related to managing actors and co-stars in a movie database.
  */
 
 public class Menu {
 
-    private static Data data = new Data();
     //Scanner object for user input
     private static final Scanner scanner = new Scanner(System.in);
     // List to store menu options
     private static final String[] options = new String[16];
+    // Format string for displaying actor information
+    private static final String ACTOR_FORMAT = "%-20s\t%-3s\t%-6s\t%-30s\t%-11s\t%-36s\t%-7s%n";
 
     // Static initializer block to populate the menu options
-
+    // Header for displaying actor information
+    private static final String ACTOR_HEADER = String.format(ACTOR_FORMAT, "NAME", "AGE", "HEIGHT", "COUNTRY", "# OF AWARDS", "IMDB LINK", "RETIRED");
+    // Format string for displaying actor pairs
+    private static final String PAIR_FORMAT = "%-32s %-33s%n";
+    // Header for displaying actor pairs
+    private static final String PAIR_HEADER = String.format(PAIR_FORMAT, "IMDBLINK1", "IMDBLINK2");
+    private static Data data = new Data();
+    // Initial message describing the purpose of the program
+    private static String optMessage = """
+            Store and access information about the actors in the Star Wars films.
+            Select an option by typing the associated number and hitting the enter key.
+            \tMenu Options
+            """;
+    // Separator string for formatting purposes
+    private static String ACTOR_SEPARATOR = "";
+    private static String PAIR_SEP = "";
 
     static {
         options[0] = ("Exit");
@@ -46,13 +63,6 @@ public class Menu {
 
     }
 
-    // Initial message describing the purpose of the program
-    private static String optMessage = """
-            Store and access information about the actors in the Star Wars films.
-            Select an option by typing the associated number and hitting the enter key.
-            \tMenu Options
-            """;
-
     // Static block to initialize the menu options
     static {
         // StringBuilder to construct the menu message
@@ -67,13 +77,7 @@ public class Menu {
         // Update optMessage with the constructed menu message
         optMessage = sb.toString();
     }
-
-    // Format string for displaying actor information
-    private static final String ACTOR_FORMAT = "%-20s\t%-3s\t%-6s\t%-30s\t%-11s\t%-36s\t%-7s%n";
-    // Header for displaying actor information
-    private static final String ACTOR_HEADER = String.format(ACTOR_FORMAT, "NAME", "AGE", "HEIGHT", "COUNTRY", "# OF AWARDS", "IMDB LINK", "RETIRED");
     // Separator string for formatting purposes
-    private static String ACTOR_SEPARATOR = "";
 
     // Static block to initialize the separator string
     static {
@@ -82,14 +86,6 @@ public class Menu {
             ACTOR_SEPARATOR += "-";
         }
     }
-
-    // Format string for displaying actor pairs
-    private static final String PAIR_FORMAT = "%-32s %-33s%n";
-    // Header for displaying actor pairs
-    private static final String PAIR_HEADER = String.format(PAIR_FORMAT, "IMDBLINK1", "IMDBLINK2");
-    // Separator string for formatting purposes
-
-    private static String PAIR_SEP = "";
 
     // Static block to initialize the separator string
     static {
@@ -116,7 +112,7 @@ public class Menu {
             } while (option.isEmpty());
             try {
                 choice = Integer.parseInt(option);
-            }catch (NumberFormatException nfe) {
+            } catch (NumberFormatException nfe) {
                 choice = null;
             }
         } while (choice == null);
@@ -129,7 +125,7 @@ public class Menu {
      * and processes the chosen option until the user chooses to exit.
      */
     public static void menuLoop(File file) {
-        if (file != null){
+        if (file != null) {
             load(file);
         }
         // Display the menu options
@@ -198,25 +194,26 @@ public class Menu {
 
 
     private static void load() {
-            String filename;
-            File file;
+        String filename;
+        File file;
+        do {
             do {
-                do {
-                    System.out.println("Enter a filename:");
-                    filename = scanner.nextLine().trim();
-                } while (filename.isEmpty());
-                file = new File(filename);
-            } while (!file.exists() || !file.canRead());
-            load(file);
+                System.out.println("Enter a filename:");
+                filename = scanner.nextLine().trim();
+            } while (filename.isEmpty());
+            file = new File(filename);
+        } while (!file.exists() || !file.canRead());
+        load(file);
+    }
+
+    private static void load(File file) {
+        if (data == null) {
+            System.err.printf("Failed to load from file %s%n", file);
+        } else {
+            System.out.printf("Loaded data from file %s%n", file);
+            Menu.data = data;
         }
-        private static void load(File file){
-            if (data == null){
-                System.err.printf("Failed to load from file %s%n", file);
-            } else{
-                System.out.printf("Loaded data from file %s%n", file);
-                Menu.data = data;
-            }
-        }
+    }
 
     private static void save() {
         String filename;
@@ -228,7 +225,7 @@ public class Menu {
             } while (filename.isEmpty());
             file = new File(filename);
         } while (file.exists() && !file.canWrite());
-        if (FileSaver.save(file, data)){
+        if (FileSaver.save(file, data)) {
             System.out.printf("Saved to file %s%n", filename);
         } else {
             System.err.printf("Failed to save to file %s%n", filename);
@@ -304,10 +301,9 @@ public class Menu {
             System.out.println("Please enter an age: ");
             // Read the user input from the scanner and trim leading/trailing whitespace
             age = scanner.nextLine().trim();
-            if (Integer.parseInt(age) < 0){
+            if (Integer.parseInt(age) < 0) {
                 System.out.println("Age cannot be less than 0! Please try again.");
-            }
-            else if (Integer.parseInt(age) > 122){
+            } else if (Integer.parseInt(age) > 122) {
                 System.out.println("Age cannot be greater than 122! Please try again.");
             }
         } while ((Integer.parseInt(age) < 0 || Integer.parseInt(age) > 122)); // Continue looping if the age is invalid
@@ -331,8 +327,7 @@ public class Menu {
             actorHeight = scanner.nextLine().trim();
             if (Integer.parseInt(actorHeight) < 0) {
                 System.out.println("Height cannot be less than 0! Please try again.");
-            }
-            else if (Integer.parseInt(actorHeight) >= 273){
+            } else if (Integer.parseInt(actorHeight) >= 273) {
                 System.out.println("Age cannot be greater than 272 cm! Please try again.");
             }
         } while (Integer.parseInt(actorHeight) < 0 || Integer.parseInt(actorHeight) > 273); // Continue looping if the height is invalid
@@ -354,7 +349,7 @@ public class Menu {
             System.out.println("Enter the country the actor is from: ");
             // Read the user input from the scanner and trim leading/trailing whitespace
             country = scanner.nextLine().trim();
-            if (country.isEmpty()){
+            if (country.isEmpty()) {
                 System.out.println("Country field cannot be empty! Try again.");
             }
         } while (country.isEmpty()); // Continue looping if the country is empty
@@ -429,7 +424,10 @@ public class Menu {
                 System.out.printf("Actor associated with link %s is already in a pair!%n", imdbLink1);
             } else if (data.checkInPair(imdbLink2)) {
                 System.out.printf("Actor associated with link %s is already in a pair!%n", imdbLink2);
-            } else {
+            } else if (Objects.equals(imdbLink1, imdbLink2)) {
+                System.out.printf("Actors cannot be in a co-star pair with themselves!");
+            }
+            else {
                 // If both actors are not in a pair, store the new co-star pair
                 boolean success = data.storeNewCoStarPair(imdbLink1, imdbLink2);
                 // Provide feedback based on the success of storing the pair
@@ -550,10 +548,9 @@ public class Menu {
                 // Display co-star pair information using formatted string
                 System.out.printf(PAIR_FORMAT, actorPair.getImdbLink1(), actorPair.getImdbLink2());
             }
-            // Display co-star pair information using formatted string
-
         }
     }
+
     /**
      * Prints information about a specific actor based on their IMDb link.
      * This method prompts the user to enter the IMDb link of the actor.
@@ -598,9 +595,7 @@ public class Menu {
         ArrayList<Actor> ActorsInCountryDescendingList = data.getActorsInCountryDescendingList();
 
         // Prints the countries in order of most to least actors
-        for (Map.Entry<String, Integer> entry : data.getActorsPerCountryDescending().entrySet()) {
-        System.out.println(entry.getKey() + ": " + entry.getValue() + " actors");
-        }
+
     }
 
     /**
@@ -641,6 +636,7 @@ public class Menu {
             System.out.printf(ACTOR_FORMAT, actor.getName(), actor.getAge(), actor.getHeight(), actor.getCountry(), actor.getNumberOfAwards(), actor.getImdbLink(), actor.isRetired());
         }
     }
+
     /**
      * Calculates the average age of all actors in the database.
      * This method retrieves the age of each actor from the {@link Data} class and calculates the average.

@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="made pop-up blue and added font Arial" />
+    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="fixed splitcostairpair">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-GUI.jar" beforeDir="false" afterPath="$PROJECT_DIR$/demo-GUI.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,13 +43,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -58,11 +62,15 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/MAhsa/Documents/UCalgary/Winter 2024 Semester/CPSC 233 (Winter 2024)/groupprojectgui&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15136719&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -72,11 +80,21 @@
       <recent name="ca.ucalgary.ahsantariq.demogui" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="MainGUI" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ca.ucalgary.ahsantariq.demogui.MainGUI" />
+      <module name="demo-GUI" />
+      <option name="PROGRAM_PARAMETERS" value="data.csv" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-9b16c6e2" />
         <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-2f79fb23" />
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
       </set>
     </attachedChunks>
   </component>
@@ -90,135 +108,7 @@
       <updated>1712092299984</updated>
       <workItem from="1712563293476" duration="1012000" />
       <workItem from="1712607333483" duration="2575000" />
-      <workItem from="1712727279599" duration="2055000" />
-    </task>
-    <task id="LOCAL-00001" summary="first commit">
-      <option name="closed" value="true" />
-      <created>1712093150914</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1712093150914</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Started UI">
-      <option name="closed" value="true" />
-      <created>1712172441534</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1712172441534</updated>
-    </task>
-    <task id="LOCAL-00003" summary="More progress on UI">
-      <option name="closed" value="true" />
-      <created>1712173657734</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1712173657734</updated>
-    </task>
-    <task id="LOCAL-00004" summary="More progress on UI">
-      <option name="closed" value="true" />
-      <created>1712173843276</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1712173843276</updated>
-    </task>
-    <task id="LOCAL-00005" summary="refined boundaries of scroll pane">
-      <option name="closed" value="true" />
-      <created>1712174101581</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1712174101581</updated>
-    </task>
-    <task id="LOCAL-00006" summary="set pref width of left side panel + elements to 130">
-      <option name="closed" value="true" />
-      <created>1712174272046</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1712174272046</updated>
-    </task>
-    <task id="LOCAL-00007" summary="set pref width of right side panel + elements to 116">
-      <option name="closed" value="true" />
-      <created>1712174350026</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1712174350026</updated>
-    </task>
-    <task id="LOCAL-00008" summary="added on-action">
-      <option name="closed" value="true" />
-      <created>1712175014496</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1712175014496</updated>
-    </task>
-    <task id="LOCAL-00009" summary="created on-action assignments">
-      <option name="closed" value="true" />
-      <created>1712175296630</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1712175296630</updated>
-    </task>
-    <task id="LOCAL-00010" summary="moved files from previous project to new gui project">
-      <option name="closed" value="true" />
-      <created>1712175706757</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1712175706757</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Titles added for MainGUI.java">
-      <option name="closed" value="true" />
-      <created>1712725531025</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1712725531025</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Adding Button fx:id's to MainController.java">
-      <option name="closed" value="true" />
-      <created>1712725871700</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1712725871700</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Added splitCoStarPair button">
-      <option name="closed" value="true" />
-      <created>1712725919931</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1712725919931</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Added on action method storeNewCoStarPair for create co star pair button">
-      <option name="closed" value="true" />
-      <created>1712726106142</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1712726106142</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Added on action method splitPair for create split co star pair button and added MainController as controller">
-      <option name="closed" value="true" />
-      <created>1712726206171</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1712726206171</updated>
-    </task>
-    <task id="LOCAL-00016" summary="created on action method for storeNewActor on MainController.java">
-      <option name="closed" value="true" />
-      <created>1712726425220</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1712726425220</updated>
+      <workItem from="1712727279599" duration="1566000" />
     </task>
     <task id="LOCAL-00017" summary="on action method for load created on MainController.java">
       <option name="closed" value="true" />
@@ -356,47 +246,296 @@
       <option name="project" value="LOCAL" />
       <updated>1712728662762</updated>
     </task>
-    <task id="LOCAL-00034" summary="made pop-up blue and added font Arial">
+    <task id="LOCAL-00034" summary="progressed on maincontroller. added status_label to main.fxml">
       <option name="closed" value="true" />
-      <created>1712729005379</created>
+      <created>1712773134634</created>
       <option name="number" value="00034" />
       <option name="presentableId" value="LOCAL-00034" />
       <option name="project" value="LOCAL" />
-      <updated>1712729005379</updated>
+      <updated>1712773134634</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="progressed on maincontroller. added printactors/viewactors">
+      <option name="closed" value="true" />
+      <created>1712780944813</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1712780944813</updated>
+    </task>
+    <task id="LOCAL-00036" summary="progressed on maincontroller. viewactors">
+      <option name="closed" value="true" />
+      <created>1712781006620</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1712781006620</updated>
+    </task>
+    <task id="LOCAL-00037" summary="progressed on maincontroller. viewcostarpairs">
+      <option name="closed" value="true" />
+      <created>1712781403978</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1712781403978</updated>
+    </task>
+    <task id="LOCAL-00038" summary="progressed on maincontroller. save">
+      <option name="closed" value="true" />
+      <created>1712781659318</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1712781659318</updated>
+    </task>
+    <task id="LOCAL-00039" summary="progressed on maincontroller. splitPair">
+      <option name="closed" value="true" />
+      <created>1712782766786</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1712782766786</updated>
+    </task>
+    <task id="LOCAL-00040" summary="fixed equals method for Pair.java">
+      <option name="closed" value="true" />
+      <created>1712785999830</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1712785999830</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Added retiring to actors">
+      <option name="closed" value="true" />
+      <created>1712786997602</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1712786997602</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Changed wording for retirement">
+      <option name="closed" value="true" />
+      <created>1712787078129</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1712787078129</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Updated actor and pair display in GUI">
+      <option name="closed" value="true" />
+      <created>1712788196931</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1712788196932</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Edited GUI setup">
+      <option name="closed" value="true" />
+      <created>1712819846512</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1712819846512</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Fixed GUI spacing (again)">
+      <option name="closed" value="true" />
+      <created>1712820642579</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1712820642579</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Added actor info alert">
+      <option name="closed" value="true" />
+      <created>1712821303332</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1712821303332</updated>
+    </task>
+    <task id="LOCAL-00047" summary="changed actor info format">
+      <option name="closed" value="true" />
+      <created>1712821444422</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1712821444422</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Implemented data stats alert">
+      <option name="closed" value="true" />
+      <created>1712864312636</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1712864312636</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Started implementing add actor to GUI">
+      <option name="closed" value="true" />
+      <created>1712868951684</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1712868951684</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Committed AddController">
+      <option name="closed" value="true" />
+      <created>1712869060916</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1712869060917</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Finished add actor">
+      <option name="closed" value="true" />
+      <created>1712869283126</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1712869283127</updated>
+    </task>
+    <task id="LOCAL-00052" summary="completed file loading from argument">
+      <option name="closed" value="true" />
+      <created>1712874345011</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1712874345012</updated>
+    </task>
+    <task id="LOCAL-00053" summary="reformatted code + created jar file">
+      <option name="closed" value="true" />
+      <created>1712874999457</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1712874999458</updated>
+    </task>
+    <task id="LOCAL-00054" summary="added jar file">
+      <option name="closed" value="true" />
+      <created>1712875023750</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1712875023750</updated>
+    </task>
+    <task id="LOCAL-00055" summary="changed maingui loading">
+      <option name="closed" value="true" />
+      <created>1712875158391</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1712875158391</updated>
+    </task>
+    <task id="LOCAL-00056" summary="changed maingui loading">
+      <option name="closed" value="true" />
+      <created>1712875185837</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1712875185837</updated>
+    </task>
+    <task id="LOCAL-00057" summary="moved jar location">
+      <option name="closed" value="true" />
+      <created>1712875837940</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1712875837940</updated>
+    </task>
+    <task id="LOCAL-00058" summary="moved jar location">
+      <option name="closed" value="true" />
+      <created>1712875845403</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1712875845403</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Added country stats button and view">
+      <option name="closed" value="true" />
+      <created>1712904016646</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1712904016646</updated>
+    </task>
+    <task id="LOCAL-00060" summary="fixed scroll pane issue">
+      <option name="closed" value="true" />
+      <created>1712904885552</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1712904885552</updated>
+    </task>
+    <task id="LOCAL-00061" summary="added error checking for if an actor is added to a costar pair with themselves">
+      <option name="closed" value="true" />
+      <created>1712905493015</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1712905493015</updated>
+    </task>
+    <task id="LOCAL-00062" summary="added error checking for if an actor is added to a costar pair with themselves">
+      <option name="closed" value="true" />
+      <created>1712905519248</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1712905519249</updated>
+    </task>
+    <task id="LOCAL-00063" summary="committing files">
+      <option name="closed" value="true" />
+      <created>1712905772244</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1712905772244</updated>
+    </task>
+    <task id="LOCAL-00064" summary="gui now launches with no arguments">
+      <option name="closed" value="true" />
+      <created>1712907175848</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1712907175848</updated>
+    </task>
+    <task id="LOCAL-00065" summary="fixed splitcostairpair">
+      <option name="closed" value="true" />
+      <created>1712907595713</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1712907595713</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created on-action assignments" />
-    <MESSAGE value="moved files from previous project to new gui project" />
-    <MESSAGE value="Titles added for MainGUI.java" />
-    <MESSAGE value="Adding Button fx:id's to MainController.java" />
-    <MESSAGE value="Added splitCoStarPair button" />
-    <MESSAGE value="Added on action method storeNewCoStarPair for create co star pair button" />
-    <MESSAGE value="Added on action method splitPair for create split co star pair button and added MainController as controller" />
-    <MESSAGE value="created on action method for storeNewActor on MainController.java" />
-    <MESSAGE value="on action method for load created on MainController.java" />
-    <MESSAGE value="on action method for save created on MainController.java" />
-    <MESSAGE value="created on action method for exit on MainController.java" />
-    <MESSAGE value="MainController.java" />
-    <MESSAGE value="new on action method for about created on MainController.java" />
-    <MESSAGE value="retire - on action method created on MainController.java" />
-    <MESSAGE value="menuPrintActorInfo on action method created" />
-    <MESSAGE value="on action method for menuActorStatistics created" />
-    <MESSAGE value="getLoneActorsCount on action method" />
-    <MESSAGE value=" Menu-&gt; close on action method completed." />
-    <MESSAGE value="About method completed" />
-    <MESSAGE value="working on About method" />
-    <MESSAGE value="fixing bugs on methods" />
-    <MESSAGE value="fixed bugs on About method" />
-    <MESSAGE value="fixed the indentation of alert message to make it look better" />
-    <MESSAGE value="changed outlook for alert pop-up" />
-    <MESSAGE value="made pop-up blue and added font Arial" />
-    <option name="LAST_COMMIT_MESSAGE" value="made pop-up blue and added font Arial" />
+    <MESSAGE value="progressed on maincontroller. save" />
+    <MESSAGE value="progressed on maincontroller. splitPair" />
+    <MESSAGE value="fixed equals method for Pair.java" />
+    <MESSAGE value="Added retiring to actors" />
+    <MESSAGE value="Changed wording for retirement" />
+    <MESSAGE value="Updated actor and pair display in GUI" />
+    <MESSAGE value="Fixed GUI spacing" />
+    <MESSAGE value="Edited GUI setup" />
+    <MESSAGE value="Fixed GUI spacing (again)" />
+    <MESSAGE value="Added actor info alert" />
+    <MESSAGE value="changed actor info format" />
+    <MESSAGE value="Implemented data stats alert" />
+    <MESSAGE value="Started implementing add actor to GUI" />
+    <MESSAGE value="Committed AddController" />
+    <MESSAGE value="Finished add actor" />
+    <MESSAGE value="completed file loading from argument" />
+    <MESSAGE value="reformatted code + created jar file" />
+    <MESSAGE value="added jar file" />
+    <MESSAGE value="changed maingui loading" />
+    <MESSAGE value="moved jar location" />
+    <MESSAGE value="Added country stats button and view" />
+    <MESSAGE value="fixed scroll pane issue" />
+    <MESSAGE value="added error checking for if an actor is added to a costar pair with themselves" />
+    <MESSAGE value="committing files" />
+    <MESSAGE value="gui now launches with no arguments" />
+    <MESSAGE value="fixed splitcostairpair" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed splitcostairpair" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
