@@ -183,38 +183,52 @@ public class MainController {
     }
 
     public void load(File file) {
-        status_label.setTextFill(Color.BLACK);
-        status_label.setText("");
+        // Reset status label appearance and text
+        status_label.setTextFill(Color.BLACK); // Set text color to black
+        status_label.setText(""); // Clear any previous text
+        // Clear any previous text
         Data data = FileLoader.load(file);
+        // Check if data loading was successful
         if (data == null) {
-            status_label.setTextFill(Color.RED);
-            status_label.setText(String.format("Failed to load from file %s%n", file));
+            // If loading failed, update status label with error message
+            status_label.setTextFill(Color.RED); // Set text color to red
+            status_label.setText(String.format("Failed to load from file %s%n", file)); // Set error message
         } else {
-            status_label.setTextFill(Color.GREEN);
-            status_label.setText(String.format("Loaded data from file %s%n", file));
+            // If loading was successful
+            status_label.setTextFill(Color.GREEN); // Set text color to green
+            status_label.setText(String.format("Loaded data from file %s%n", file)); // Set success message
+
+            // Update main controller's data
             MainController.data = data;
-            viewActors();
-            viewCoStarPairs();
-            viewUnpaired();
+            // Update views
+            viewActors(); // Update Actors view
+            viewCoStarPairs(); // Update co-star pairs view
+            viewUnpaired(); // Update unpaired view
 
         }
     }
 
     @FXML
     void save(ActionEvent event) {
+        // Create a file chooser dialog
         FileChooser fc = new FileChooser();
-        fc.setTitle("Save a file");
-        fc.setInitialDirectory(new File("."));
-        fc.setInitialFileName("data.csv");
-        File file = fc.showSaveDialog(new Stage());
+        fc.setTitle("Save a file"); // Set dialog title
+        fc.setInitialDirectory(new File(".")); // Set initial directory to current directory
+        fc.setInitialFileName("data.csv"); // Set default file name
+        File file = fc.showSaveDialog(new Stage()); // Show the save dialog and wait for user input
+
+        // Attempt to save data to the selected file
         if (FileSaver.save(file, data)) {
-            status_label.setTextFill(Color.GREEN);
-            status_label.setText(String.format("Saved to file %s%n", file));
+            // If saving was successful, update status label with success message
+            status_label.setTextFill(Color.GREEN); // Set text color to green
+            status_label.setText(String.format("Saved to file %s%n", file)); // Set success message
         } else {
-            status_label.setTextFill(Color.RED);
-            status_label.setText(String.format("Failed to save to file %s%n", file));
+            // If saving failed, update status label with error message
+            status_label.setTextFill(Color.RED); // Set text color to red
+            status_label.setText(String.format("Failed to save to file %s%n", file)); // Set error message
         }
     }
+
 
     @FXML
     void menuActorStatistics(ActionEvent event) {

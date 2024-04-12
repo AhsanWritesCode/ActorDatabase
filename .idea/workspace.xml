@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="changed to monospaced fonts for view panes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainGUI.java" afterDir="false" />
-    </list>
+    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="Updating" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,14 +105,6 @@
       <workItem from="1712563293476" duration="1012000" />
       <workItem from="1712607333483" duration="2575000" />
       <workItem from="1712727279599" duration="1566000" />
-    </task>
-    <task id="LOCAL-00018" summary="on action method for save created on MainController.java">
-      <option name="closed" value="true" />
-      <created>1712726531732</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1712726531732</updated>
     </task>
     <task id="LOCAL-00019" summary="created on action method for exit on MainController.java">
       <option name="closed" value="true" />
@@ -501,14 +490,21 @@
       <option name="project" value="LOCAL" />
       <updated>1712910031596</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Updating">
+      <option name="closed" value="true" />
+      <created>1712911580612</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1712911580612</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed equals method for Pair.java" />
     <MESSAGE value="Added retiring to actors" />
     <MESSAGE value="Changed wording for retirement" />
     <MESSAGE value="Updated actor and pair display in GUI" />
@@ -533,7 +529,8 @@
     <MESSAGE value="gui now launches with no arguments" />
     <MESSAGE value="fixed splitcostairpair" />
     <MESSAGE value="changed to monospaced fonts for view panes" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed to monospaced fonts for view panes" />
+    <MESSAGE value="Updating" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
