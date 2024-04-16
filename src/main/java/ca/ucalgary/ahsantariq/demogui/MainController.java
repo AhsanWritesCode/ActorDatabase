@@ -153,7 +153,7 @@ public class MainController {
         ArrayList<Actor> actors = data.getAllActors();
         actors.sort(new ActorNameImdbLinkComparator());
         String s = viewActors(actors);
-        actors_label.setText(s);
+        actors_label.setText("ACTORS:"+"\n"+"\n"+s);
         actors_label.setFont(new Font("Courier New", 10));
     }
 
@@ -162,7 +162,7 @@ public class MainController {
         ArrayList<Actor> actors = data.getActorsNotInPair();
         actors.sort(new ActorNameImdbLinkComparator());
         String s = viewActors(actors);
-        unpaired_label.setText(s);
+        unpaired_label.setText("UNPAIRED ACTORS:"+"\n"+"\n"+s);
         unpaired_label.setFont(new Font("Courier New", 10));
     }
 
@@ -181,7 +181,7 @@ public class MainController {
                 sb.append(String.format(PAIR_FORMAT, actorPair.getImdbLink1(), actorPair.getImdbLink2()));
             }
         }
-        costars_label.setText(sb.toString());
+        costars_label.setText("CO-STAR PAIRS:"+"\n"+"\n"+sb.toString());
         costars_label.setFont(new Font("Courier New", 10));
     }
 
