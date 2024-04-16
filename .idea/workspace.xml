@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="added error checking for retiring actors">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-12__12_06_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-12__12_06_p_m___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-12__1_11p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-12__1_11p_m___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-12__2_09p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-12__2_09p_m___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-12__2_32a_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-12__2_32a_m___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-12__2_44a_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-12__2_44a_m___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-12__3_11p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-12__3_11p_m___Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-GUI.jar" beforeDir="false" afterPath="$PROJECT_DIR$/demo-GUI.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/ucalgary/ahsantariq/demogui/MainGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

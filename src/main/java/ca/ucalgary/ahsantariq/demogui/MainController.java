@@ -279,19 +279,33 @@ public class MainController {
         // Create an alert dialog for displaying actor information
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Actor Info"); // Set dialog title
+        if (info_id1.getText().isEmpty()) {
+            status_label.setTextFill(Color.RED); // Set text color to red
+            status_label.setText(String.format("No input provided for actor!")); // Set error message
+        }
+        else {
+            // Retrieve actor information based on input
+            if (data.actorExists(info_id1.getText())) {
+                status_label.setTextFill(Color.GREEN); // Set text color to red
+                status_label.setText(String.format("Successfully displayed actor info!")); // Set success message
+                Actor actor = data.getActor(info_id1.getText());
 
-        // Retrieve actor information based on input
-        Actor actor = data.getActor(info_id1.getText());
+                // Set dialog header text to include actor's IMDb link
+                alert.setHeaderText("Actor: " + actor.getImdbLink());
 
-        // Set dialog header text to include actor's IMDb link
-        alert.setHeaderText("Actor: " + actor.getImdbLink());
+                // Construct content text with actor's details
+                alert.setContentText(String.format("Name: %s%nImdb Link: %s%nAge: %s%nHeight: %s%nCountry: %s%nAwards Won: %s%n",
+                        actor.getName(), actor.getImdbLink(), actor.getAge(), actor.getHeight(), actor.getCountry(), actor.getNumberOfAwards()));
 
-        // Construct content text with actor's details
-        alert.setContentText(String.format("Name: %s%nImdb Link: %s%nAge: %s%nHeight: %s%nCountry: %s%nAwards Won: %s%n",
-                actor.getName(), actor.getImdbLink(), actor.getAge(), actor.getHeight(), actor.getCountry(), actor.getNumberOfAwards()));
+                // Show the alert dialog and wait for user interaction
+                alert.showAndWait();
+            }
+            else {
+                status_label.setTextFill(Color.RED); // Set text color to red
+                status_label.setText(String.format("There is no actor with this IMDB Link in the database!")); // Set error message
+            }
 
-        // Show the alert dialog and wait for user interaction
-        alert.showAndWait();
+        }
     }
 
 

@@ -58,7 +58,7 @@ public class MainGUI extends Application {
         // Create an FXMLLoader object to load the FXML file
         FXMLLoader fxmlLoader = new FXMLLoader(MainGUI.class.getResource("main.fxml"));
         // Create a Scene object using the loaded FXML file and set its dimensions
-        Scene scene = new Scene(fxmlLoader.load(), 1920, 1080);
+        Scene scene = new Scene(fxmlLoader.load(), 1600, 900);
         // Get the controller associated with the FXML file
         MainController cont = fxmlLoader.getController();
         // Set the title of the stage
