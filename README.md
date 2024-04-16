@@ -24,3 +24,12 @@ In the .jar files directory. The module path should be
 the directory for the javafx sdk available from:\
 https://gluonhq.com/products/javafx/
 
+## Authors
+Ethan Braum, UCID: 30205114, Email: ethan.braum@ucalgary.ca\
+Ahsan Tariq, UCID: 30119695, Email: ahsan.tariq@ucalgary.ca\
+Rahnuha Nurain, UCID: 30203774 Email: rahnuha.nurain@ucalgary.ca
+
+## Class Information
+Ethan Braum, Tutorial 17 lecture 3\
+Ahsan Tariq, Tutorial 17 lecture 3\
+Rahnuha Nurain, Tutorial 17 lecture 3
