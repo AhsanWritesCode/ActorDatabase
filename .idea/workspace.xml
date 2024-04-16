@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="Added JUnit tests to this repository for Data" />
+    <list default="true" id="97552888-3045-4e62-a6af-a234b0a24d9b" name="Changes" comment="deleted old data files used for demonstration purposes">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-15__8_19_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-04-15__8_19_p_m___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,14 +118,6 @@
       <workItem from="1712563293476" duration="1012000" />
       <workItem from="1712607333483" duration="2575000" />
       <workItem from="1712727279599" duration="1566000" />
-    </task>
-    <task id="LOCAL-00029" summary="working on About method">
-      <option name="closed" value="true" />
-      <created>1712728062569</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1712728062569</updated>
     </task>
     <task id="LOCAL-00030" summary="fixing bugs on methods">
       <option name="closed" value="true" />
@@ -507,14 +503,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713235166559</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="deleted old data files used for demonstration purposes">
+      <option name="closed" value="true" />
+      <created>1713235645526</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1713235645526</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Committed AddController" />
     <MESSAGE value="Finished add actor" />
     <MESSAGE value="completed file loading from argument" />
     <MESSAGE value="reformatted code + created jar file" />
@@ -539,7 +542,8 @@
     <MESSAGE value="fixed retiring bug" />
     <MESSAGE value="added error checking for retiring actors" />
     <MESSAGE value="Added JUnit tests to this repository for Data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added JUnit tests to this repository for Data" />
+    <MESSAGE value="deleted old data files used for demonstration purposes" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted old data files used for demonstration purposes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
