@@ -3,8 +3,10 @@
 ## Description
 
 Our group's project is a database for actors similar to IMDB. It takes in information about actors from the user (name, age, height, etc.) and displays it in a clean, consistent monospaced font.
-It also displays co-star pairs which can be created with actors in the database. Each actor is associated with a unique Imdb link from the website Imdb
-which are used to identity actors within the database. Saving and loading of .csv files are also allowed in the program.
+
+It also displays co-star pairs which can be created with actors in the database. Each actor is associated with a unique IMDB link from the website IMDB which are used to identity actors within the database. 
+
+Saving and loading of .csv files are also allowed in the program.
 
 ## How to run
 Without .jar file:\
