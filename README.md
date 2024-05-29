@@ -1,4 +1,4 @@
-# Actor database GUI
+# Actor Database GUI
 
 ## Description
 
